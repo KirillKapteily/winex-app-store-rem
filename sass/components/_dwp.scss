@@ -1,0 +1,76 @@
+.download-info{
+    display: flex;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.main-list2{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 10px;
+list-style: none;
+}
+
+.download__p{
+    margin-left: 30px;
+}
+
+.download__safe{
+    margin-left: 30px;
+    text-align: center;
+}
+
+.safe{
+width: 80px;
+height: 80px;
+}
+
+
+
+.download__ico{
+    fill: white;
+    width: 30px;
+    height: 30px;
+}
+
+.main-item{
+    padding: 10px 10px;
+
+}
+
+.main-title{
+    text-align: center;
+}
+
+.download-description{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 15px;
+letter-spacing: 1px;
+    width: 500px;
+}
+
+.img-list{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.download-button{
+    border-radius: 10px;
+    margin-bottom: 50px;
+    text-decoration: none;
+    padding: 10px 10px;
+    color: white;
+    font-size: 30px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(104, 104, 104, 0.498);
+    transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+
+    &:hover{
+        transform: scale(1.1);
+    }
+    
+}

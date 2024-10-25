@@ -1,0 +1,58 @@
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+@media (min-width:320px) and (max-width:480px){
+    .container{
+        max-width: 320px;
+    }
+
+.download__safe{
+    margin: 0px;
+}
+
+.img-item{
+    width: 300px;
+}
+
+.download__p{
+    margin: 0px;
+}
+
+.safe{
+    margin: 0px;
+}
+
+
+.download-button{
+    display: flex;
+    justify-content: center;
+}
+
+    .download-info{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+    }
+
+.header-item{
+    display: none;
+}
+
+.menu-link{
+    display: none;
+}
+
+    .slider{
+        display: none;
+    }
+}
+
+@media (min-width:1200px){
+.openbtn{
+display: none;
+}
+}
