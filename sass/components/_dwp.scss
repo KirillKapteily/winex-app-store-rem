@@ -4,11 +4,18 @@
     flex-wrap: wrap;
 }
 
+ul{
+    padding-inline-start: 0px;
+
+}
+
+
 .main-list2{
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
 gap: 10px;
+padding-left: 0px;
 list-style: none;
 }
 
@@ -48,7 +55,14 @@ height: 80px;
     margin-bottom: 50px;
     font-size: 15px;
 letter-spacing: 1px;
-    width: 500px;
+    max-width: 500px;
+}
+
+.none{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
 }
 
 .img-list{

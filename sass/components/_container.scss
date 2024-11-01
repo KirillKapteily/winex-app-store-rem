@@ -9,22 +9,30 @@
         max-width: 320px;
     }
 
-.download__safe{
-    margin: 0px;
-}
+
+    
+
+    .download__safe {
+        margin-left: 0px!important;
+    }
 
 .img-item{
     width: 300px;
 }
 
 .download__p{
-    margin: 0px;
+    margin-left: 0px!important;
 }
 
 .safe{
     margin: 0px;
 }
 
+
+.img-wrap{
+    width: 300px;
+    height: auto;
+}
 
 .download-button{
     display: flex;
@@ -51,6 +59,19 @@
     }
 }
 
+@media (min-width:768px) and (max-width:1199px){
+    .container{
+        max-width: 768px;
+    }
+
+    .openbtn{
+        display: none;
+        }
+
+        .slider{
+            left: 30px!important;
+        }
+}
 @media (min-width:1200px){
 .openbtn{
 display: none;

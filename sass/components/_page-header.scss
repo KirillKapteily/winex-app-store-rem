@@ -7,12 +7,15 @@ list-style: none;
 .logo{
     text-decoration: none;
     color: black;
+font-size: 20px;
 }
 
 header{
     display: flex;
     align-items: center;
     margin-bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.174);
+    border-radius: 5px;
 }
 
 .menu {
@@ -49,6 +52,9 @@ scale: (1.1);
     padding: 10px 20px;
     text-decoration: none;
     
+    &:hover{
+      color: rgb(66, 66, 66);
+    }
    }
    
    .submenu {
@@ -265,6 +271,8 @@ color: gray;
 
 .logow{
   text-decoration: none;
+color: black;
+font-size: 20px;
 }
   .menu-b{
 

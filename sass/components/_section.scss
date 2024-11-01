@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    justify-content: center;
     list-style: none;
 }
 
@@ -12,10 +13,13 @@
 .main-item{
 border-color: antiquewhite;
 backdrop-filter: blur(5px);
+border-radius: 10px;
 transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
 
 &:hover{
+    background-color: rgba(0, 0, 0, 0.12);
 transform: scale(1.1);
+
 }
 
 }
@@ -40,6 +44,7 @@ transform: scale(1.1);
 }
 
 .next{
+    border-radius: 10px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -63,6 +68,8 @@ transform: scale(1.1);
     border: none;
     padding: 10px;
     cursor: pointer;
+border-radius: 10px;
+
 }
 
 .prev {
