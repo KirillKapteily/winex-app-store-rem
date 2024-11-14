@@ -8,17 +8,25 @@
 
 .main-link{
     text-decoration: none;
+    transition: margin cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+
+    &:hover{
+        margin: 10px;
+    }
 }
 
 .main-item{
 border-color: antiquewhite;
 backdrop-filter: blur(5px);
-border-radius: 10px;
+border-radius: 20px;
 transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+background-color: rgba(0, 0, 0, 0.027);
+
 
 &:hover{
-    background-color: rgba(0, 0, 0, 0.12);
+    background-color: rgba(0, 0, 0, 0.102);
 transform: scale(1.1);
+
 
 }
 
