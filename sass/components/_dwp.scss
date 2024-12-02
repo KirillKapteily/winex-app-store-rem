@@ -65,6 +65,13 @@ letter-spacing: 1px;
     justify-content: center;
 }
 
+.product-img{
+    transition: transform 0.5s;
+    &:hover{
+        transform: rotate(360deg);
+    }
+}
+
 .img-list{
     list-style: none;
     display: flex;

@@ -20,6 +20,8 @@
         <a href="#" class="closebtn" onclick="closeMenu()">&times;</a>
         <a href="#" class="sidebar-link">Games</a>
         <a href="indexmacos.html" class="sidebar-link">Change OS to MacOS</a>
+        
+  
       </div>
       <button class="openbtn" onclick="openMenu()">☰</button>
       <!-- <button type="button" class="menu-b btn__open" data-modal-open>menu</button>
@@ -36,25 +38,34 @@
         <li class="header-item"><a href="#" class="menu-link">Games</a></li>
         <li class="header-item">
           <a href="indexmacos.html" class="menu-link">Change OS to MacOS</a>
-          <!-- <ul class="submenu">
-            <li><a href="#" class="submenu-link">MacOS</a></li>
-            <li><a href="#" class="submenu-link">Linux</a></li>
-            <li><a href="#" class="submenu-link">Windows</a></li>
-            <li><a href="#" class="submenu-link">Android</a></li>
-            <li><a href="#" class="submenu-link">IOS</a></li>
-          </ul> -->
         </li>
       </ul>
     </div>
   </header>
   <main>
     <div class="container">
+      <div class="center-button">
+        <button class="open-chat-btn" onclick="openChat()">AI</button>
+    </div>
+
+    <div class="modal" id="chat-modal">
+        <button class="close-btn" onclick="closeChat()">&times;</button>
+        <div class="chat-container">
+            <div class="chat-header">AI program helper BETA</div>
+            <div class="chat-messages" id="chat-messages"></div>
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Message">
+                <button onclick="sendMessage()">Send Message</button>
+            </div>
+        </div>
+    </div>
       <section class="slider-sect">
         <div class="slider">
           <div class="slides">
             <img src="./images/appsscreens/firefox-1.jpeg" alt="Slide 1">
             <img src="./images/appsscreens/telegram-1.jpeg" alt="Slide 2">
             <img src="./images/appsscreens/githubdesk-1.png" alt="Slide 3">
+
           </div>
           <button class="prev">&#8592;</button>
           <button class="next">&#8594;</button>
@@ -160,6 +171,7 @@
   </footer>
 
 </body>
+<script src="ai.js"></script>
 <script src="script.js"></script>
 
 </html>
