@@ -579,6 +579,12 @@ ul {
   flex-direction: column;
 }
 
+.ai-input {
+  background-color: rgba(221, 221, 221, 0);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+
 .chat-header {
   background: rgba(255, 255, 255, 0.2196078431);
   backdrop-filter: blur(10px);

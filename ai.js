@@ -29,7 +29,25 @@ const modal = document.getElementById("chat-modal");
                         "skype": "Skype is a communication platform for video calls, voice calls, and messaging.",
                         "opera": "Opera is a web browser with unique features like a built-in VPN and ad blocker.",
                         "steam": "Steam is a digital distribution platform for video games and a hub for gaming communities.",
-                        "gitbash": "GitBash is a command-line tool for using Git with a bash shell interface on Windows."
+                        "gitbash": "GitBash is a command-line tool for using Git with a bash shell interface on Windows.",
+                        "what is firefox": "Firefox is a web browser used for browsing the internet securely and efficiently.",
+                        "what is github_desktop": "GitHub Desktop is a tool for managing Git repositories with a user-friendly interface.",
+                        "what is telegram": "Telegram is a messaging app offering fast, secure, and cloud-based communication.",
+                        "what is anydesk": "AnyDesk is a remote desktop software that allows you to control devices from a distance.",
+                        "what is google_chrome": "Google Chrome is a popular web browser known for its speed and integration with Google services.",
+                        "what is supermium": "Supermium is an application for premium content or features (specific details depend on context).",
+                        "what is vs_code": "Visual Studio Code (VS Code) is a powerful code editor for various programming languages.",
+                        "what is dropbox": "Dropbox is a cloud storage service used for saving and sharing files online.",
+                        "what is spotify": "Spotify is a music streaming platform providing access to millions of songs and podcasts.",
+                        "what is microsoft_edge": "Microsoft Edge is a web browser with modern features and deep integration with Windows.",
+                        "what is google_drive": "Google Drive is a cloud-based file storage and collaboration service by Google.",
+                        "what is discord": "Discord is a platform for voice, video, and text communication, popular among gamers and communities.",
+                        "what is malwarebytes": "Malwarebytes is an antivirus and anti-malware software to protect devices from threats.",
+                        "what is obs": "OBS (Open Broadcaster Software) is used for video recording and live streaming.",
+                        "what is skype": "Skype is a communication platform for video calls, voice calls, and messaging.",
+                        "what is opera": "Opera is a web browser with unique features like a built-in VPN and ad blocker.",
+                        "what is steam": "Steam is a digital distribution platform for video games and a hub for gaming communities.",
+                        "what is gitbash": "GitBash is a command-line tool for using Git with a bash shell interface on Windows.",
                       
                       
                 };

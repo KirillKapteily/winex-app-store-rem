@@ -48,6 +48,21 @@
   </header>
   <main>
     <div class="container">
+      <div class="center-button">
+        <button class="open-chat-btn" onclick="openChat()">AI</button>
+    </div>
+
+    <div class="modal" id="chat-modal">
+        <button class="close-btn" onclick="closeChat()">&times;</button>
+        <div class="chat-container">
+            <div class="chat-header">AI program helper BETA</div>
+            <div class="chat-messages" id="chat-messages"></div>
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Message" class="ai-input">
+                <button onclick="sendMessage()">Send Message</button>
+            </div>
+        </div>
+    </div>
       <section class="slider-sect">
         <div class="slider">
           <div class="slides">

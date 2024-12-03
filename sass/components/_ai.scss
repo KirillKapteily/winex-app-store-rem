@@ -41,6 +41,11 @@ z-index: 1000000;
     flex-direction: column;
 }
 
+.ai-input{
+    background-color: #dddddd00;
+    backdrop-filter: blur(20px);
+}
+
 .chat-header {
     background: #ffffff38;
     backdrop-filter: blur(10px);
