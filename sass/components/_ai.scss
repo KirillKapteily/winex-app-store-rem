@@ -6,13 +6,17 @@ justify-content: center;
 }
 
 .open-chat-btn {
-    padding: 10px 20px;
+    padding: 10px 30px;
     font-size: 18px;
     background-color: #f8f8f884;
     color: rgb(0, 0, 0);
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .open-chat-btn:hover {

@@ -50,19 +50,19 @@
     <div class="container">
       <div class="center-button">
         <button class="open-chat-btn" onclick="openChat()">AI</button>
-    </div>
+      </div>
 
-    <div class="modal" id="chat-modal">
+      <div class="modal" id="chat-modal">
         <button class="close-btn" onclick="closeChat()">&times;</button>
         <div class="chat-container">
-            <div class="chat-header">AI program helper BETA</div>
-            <div class="chat-messages" id="chat-messages"></div>
-            <div class="chat-input">
-                <input type="text" id="user-input" placeholder="Message" class="ai-input">
-                <button onclick="sendMessage()">Send Message</button>
-            </div>
+          <div class="chat-header">AI program helper BETA</div>
+          <div class="chat-messages" id="chat-messages"></div>
+          <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Message" class="ai-input">
+            <button onclick="sendMessage()">Send Message</button>
+          </div>
         </div>
-    </div>
+      </div>
       <section class="slider-sect">
         <div class="slider">
           <div class="slides">
@@ -147,25 +147,43 @@
               src="images/steam.svg" alt="Steam" width="139">
             <h3 class="card-title">Steam</h3>
           </a></li>
+        <li class="main-item"><a href="./html/epicgamesdow.html" class="main-link"><img class="img"
+              src="images/epic-games.svg" alt="steam" width="160">
+            <h3 class="card-title">Epic Games</h3>
+          </a></li>
       </ul>
     </div>
   </main>
   <footer>
     <div class="container">
-      <ul class="footer-list">
-        <li><a href="#" class="logow">WinexAppStore</a></li>
-        <li>
-          <p>Winex App Store Discover the ultimate app library with Winex App Store, your secure and modern destination
-            for
-            software on Windows, macOS, Android, and Linux. Whether you're seeking productivity tools, creative
-            software, or
-            the latest games, Winex App Store offers a curated selection to meet all your digital needs.</p>
-        </li>
-      </ul>
-    </div>
+      <div class="container">
+        <ul class="footer-list">
+          <li><a href="#" class="logow">WinexAppStore</a></li>
+          <div class="footer-wrapper">
+            <div class="footer-wrapper-info">
+              <li>
+                <p>Winex App Store Discover the ultimate app library with Winex App Store, your secure and modern
+                  destination
+                  for
+                  software on Windows, macOS, Android, and Linux. Whether you're seeking productivity tools, creative
+                  software, or
+                  the latest games, Winex App Store offers a curated selection to meet all your digital needs.</p>
+              </li>
+          </ul>
+          <div>
+            <ul class="footer-list">
+              <li class="footer-item"><a href="mailto:lenaplop980@icloud.com" class="mailto">lenaplop980@icloud.com</a></li>
+              <li class="footer-item"><a href="https://github.com/KirillKapteily" class="footer-link">GitHub</a></li>
+            </ul>
+          </div>
+          </div>
+          
+      </div>
+      </div>
   </footer>
 
 </body>
+<script src="ai.js"></script>
 <script src="script.js"></script>
 
 </html>
