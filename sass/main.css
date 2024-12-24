@@ -26,6 +26,9 @@ body {
   .download__p {
     margin-left: 0px !important;
   }
+  .backdropload {
+    width: 320px;
+  }
   .safe {
     margin: 0px;
   }
@@ -81,6 +84,23 @@ body {
   text-decoration: none;
 }
 
+.list-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.backdropload {
+  background-color: rgba(0, 145, 255, 0.061);
+  border: rgba(0, 145, 255, 0.061) 1px solid;
+  border-radius: 20px;
+  padding: 10px 10px;
+}
+
 .main-item {
   border-color: antiquewhite;
   -webkit-backdrop-filter: blur(5px);
@@ -97,6 +117,13 @@ body {
   margin: 1px 20px;
   box-shadow: 10px 10px 10px rgba(0, 145, 255, 0.443);
   border: rgba(0, 213, 255, 0.11) 1px solid;
+}
+
+.card-p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
 }
 
 .slider {
@@ -666,14 +693,14 @@ ul {
 
 .chat-input button {
   padding: 10px;
-  background: rgba(76, 175, 79, 0.462745098);
+  background: rgba(0, 68, 255, 0.462745098);
   color: white;
   border: none;
   cursor: pointer;
 }
 
 .chat-input button:hover {
-  background: rgba(69, 160, 73, 0.4509803922);
+  background: rgba(0, 68, 255, 0.537254902);
 }
 
 .close-btn {

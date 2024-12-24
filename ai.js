@@ -11,8 +11,17 @@ function closeChat() {
 class ChatBot {
     constructor() {
         this.responses = {
-            "hello": "hi, what can I help with?",
+            "hello": "hello, what can I help with?",
             "hi": "hi, what can I help with?",
+            "hey": "hi, how can I help?",
+            "how are you": "i'm a bot, so i'm always fine",
+            "what do you do": "i'm a chatbot, here to help you with any questions you have",
+            "what is your purpose": "to assist you with any questions or tasks you have",
+            "who created you": "i was created by a Kirill to help with answering questions",
+            "who is your creator": "my creator is Kirill",
+            "what is your name": "i'm a Winex Assistant",
+            "what can you do": "i can help answer questions, provide information, and assist with tasks",
+            "help": "how can I help you?",
             "bye": "bye, thanks for testing",
             "goodbye": "goodbye, thanks for testing",
             "thanks": "you're welcome",
@@ -38,9 +47,11 @@ class ChatBot {
             "onedrive": "OneDrive is a cloud storage service by Microsoft for storing, syncing, and sharing files.",
             "viber": "Viber is a messaging and voice call app that allows free communication worldwide.",
             "figma": "Figma is a collaborative design tool for creating user interfaces, prototypes, and more.",
-            "apple music": "Apple Music is a music streaming service offering a large library of songs and curated playlists."
+            "apple music": "Apple Music is a music streaming service offering a large library of songs and curated playlists.",
+            "zoom": "zoom is Zoom is a popular video conferencing software that allows individuals and organizations to host virtual meetings."
+
         };
-        this.defaultResponse = "Sorry, this program doesn't include in my database.";
+        this.defaultResponse = "Sorry, I can't answer for that.";
     }
 
     getResponse(message) {
