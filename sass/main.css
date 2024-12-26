@@ -92,6 +92,10 @@ body {
   font-size: 20px;
   font-weight: 700;
   margin: 20px 0;
+  background-color: rgba(80, 179, 255, 0.034);
+  border: rgba(0, 145, 255, 0.061) 1px solid;
+  border-radius: 20px;
+  padding: 10px 10px;
 }
 
 .backdropload {
