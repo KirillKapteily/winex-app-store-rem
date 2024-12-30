@@ -2,6 +2,10 @@
     display: flex;
     margin-bottom: 30px;
     flex-wrap: wrap;
+    background-color: rgba(0, 145, 255, 0.061);
+    border: rgba(0, 145, 255, 0.061) 1px solid ;
+    border-radius: 30px;
+    padding: 10px 10px;
 }
 
 ul{
@@ -17,6 +21,11 @@ justify-content: center;
 gap: 10px;
 padding-left: 0px;
 list-style: none;
+
+background-color: rgba(0, 145, 255, 0.061);
+border: rgba(0, 145, 255, 0.061) 1px solid ;
+border-radius: 30px;
+padding: 10px 10px;
 }
 
 .download__p{
@@ -29,16 +38,25 @@ list-style: none;
 }
 
 .safe{
+    fill: rgb(0, 157, 255);
 width: 80px;
 height: 80px;
+transition: transform 1s;
+
+&:hover{
+    transform: translateY(-10px);
+}
 }
 
 
 
 .download__ico{
+    transition: transform 0.1s;
     fill: white;
     width: 30px;
     height: 30px;
+    transform: translateY(5px);
+
 }
 
 .main-item{
@@ -48,6 +66,10 @@ height: 80px;
 
 .main-title{
     text-align: center;
+    background-color: rgba(0, 145, 255, 0.024);
+    border: rgba(0, 145, 255, 0.061) 1px solid ;
+    border-radius: 30px;
+    padding: 10px 10px;
 }
 
 .download-description{
@@ -70,17 +92,21 @@ letter-spacing: 1px;
     &:hover{
         transform: rotate(360deg);
     }
+    
 }
+
 
 .img-list{
     list-style: none;
     display: flex;
-    gap: 10px;
+    gap: 20px;
     flex-wrap: wrap;
+    margin-top: 50px;
+
 }
 
 .download-button{
-    border-radius: 10px;
+    border-radius: 20px;
     margin-bottom: 50px;
     text-decoration: none;
     padding: 10px 10px;

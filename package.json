@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "compromise": "^14.14.3",
+    "natural": "^8.0.1"
+  }
+}
