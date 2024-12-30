@@ -182,7 +182,7 @@ class ChatBot {
 }
 
 // Убедитесь, что ваш ключ API Hugging Face заменен
-const apiKey = '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';
+const apiKey = '-';
 const bot = new ChatBot(apiKey);
 
 // Функция для отправки сообщений
