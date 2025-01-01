@@ -177,7 +177,9 @@ class ChatBot {
         "viber": "Viber is a messaging and voice call app that allows free communication worldwide.",
         "figma": "Figma is a collaborative design tool for creating user interfaces, prototypes, and more.",
         "apple music": "Apple Music is a music streaming service offering a large library of songs and curated playlists.",
-        "zoom": "zoom is Zoom is a popular video conferencing software that allows individuals and organizations to host virtual meetings."
+        "zoom": "zoom is Zoom is a popular video conferencing software that allows individuals and organizations to host virtual meetings.",
+        "bandicam": "bandicam is a screen recording software that allows you to capture your screen activity with high quality.",
+        "whatsapp": "whatsapp is a messaging app that allows you to send messages, make voice and video calls, and share media.",
     };
 }
 
