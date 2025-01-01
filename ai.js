@@ -181,6 +181,7 @@ class ChatBot {
         "bandicam": "bandicam is a screen recording software that allows you to capture your screen activity with high quality.",
         "whatsapp": "whatsapp is a messaging app that allows you to send messages, make voice and video calls, and share media.",
         "gimp": "gimp is a free and open-source image editor used for retouching photos and creating graphics.",
+        "canva": "canva is a graphic design platform that allows you to create social media graphics, presentations, and more.",
     };
 }
 
