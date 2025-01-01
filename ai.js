@@ -180,6 +180,7 @@ class ChatBot {
         "zoom": "zoom is Zoom is a popular video conferencing software that allows individuals and organizations to host virtual meetings.",
         "bandicam": "bandicam is a screen recording software that allows you to capture your screen activity with high quality.",
         "whatsapp": "whatsapp is a messaging app that allows you to send messages, make voice and video calls, and share media.",
+        "gimp": "gimp is a free and open-source image editor used for retouching photos and creating graphics.",
     };
 }
 
