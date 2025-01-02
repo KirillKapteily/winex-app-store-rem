@@ -566,10 +566,11 @@ ul {
   fill: rgb(0, 157, 255);
   width: 80px;
   height: 80px;
-  transition: transform 1s;
+  transition: transform 1s, fill 1s;
 }
 .safe:hover {
   transform: translateY(-10px);
+  fill: rgb(0, 119, 255);
 }
 
 .download__ico {
@@ -598,6 +599,10 @@ ul {
   font-size: 15px;
   letter-spacing: 1px;
   max-width: 500px;
+  background-color: rgba(0, 145, 255, 0.061);
+  border: rgba(0, 145, 255, 0.061) 1px solid;
+  border-radius: 30px;
+  padding: 10px 10px;
 }
 
 .none {
