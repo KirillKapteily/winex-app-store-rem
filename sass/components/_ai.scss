@@ -24,6 +24,11 @@ justify-content: center;
     background-color: #ffffff84;
 }
 
+.go{
+    width: 20px;
+    height: 20px;
+}
+
 .modal {
     position: fixed;
     top: 100;
@@ -39,8 +44,8 @@ z-index: 1000000;
     background: rgba(255, 255, 255, 0);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.128);
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -52,21 +57,22 @@ z-index: 1000000;
 }
 
 .chat-header {
-    background: #ffffff38;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: #ffffff00;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     color: rgb(0, 0, 0);
     padding: 10px;
     text-align: center;
     font-size: 18px;
+    text-shadow: #eeeeee 1px 0 10px;
 }
 
 .chat-messages {
     flex: 1;
     padding: 10px;
     overflow-y: auto;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #dddddd21;
+    border-bottom: 1px solid #dddddd23;
 }
 
 .message {
@@ -93,7 +99,7 @@ z-index: 1000000;
     flex: 1;
     padding: 10px;
     border: none;
-    border-right: 1px solid #ddd;
+    border-right: 1px solid #dddddd38;
 }
 
 .chat-input button {

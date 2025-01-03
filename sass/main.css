@@ -3,6 +3,16 @@ body {
   background: linear-gradient(to bottom, #cfecff, #ffffff);
 }
 
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -171,7 +181,7 @@ body {
 }
 
 .next {
-  border-radius: 10px;
+  border-radius: 20px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -197,7 +207,7 @@ body {
   border: none;
   padding: 10px;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .prev {
@@ -578,6 +588,7 @@ ul {
   fill: white;
   width: 30px;
   height: 30px;
+  margin-right: 10px;
   transform: translateY(5px);
 }
 
@@ -668,6 +679,11 @@ ul {
   background-color: rgba(255, 255, 255, 0.5176470588);
 }
 
+.go {
+  width: 20px;
+  height: 20px;
+}
+
 .modal {
   position: fixed;
   top: 100;
@@ -683,8 +699,8 @@ ul {
   background: rgba(255, 255, 255, 0);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.128);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -697,21 +713,22 @@ ul {
 }
 
 .chat-header {
-  background: rgba(255, 255, 255, 0.2196078431);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
   color: rgb(0, 0, 0);
   padding: 10px;
   text-align: center;
   font-size: 18px;
+  text-shadow: #eeeeee 1px 0 10px;
 }
 
 .chat-messages {
   flex: 1;
   padding: 10px;
   overflow-y: auto;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  border-top: 1px solid rgba(221, 221, 221, 0.1294117647);
+  border-bottom: 1px solid rgba(221, 221, 221, 0.137254902);
 }
 
 .message {
@@ -739,7 +756,7 @@ ul {
   flex: 1;
   padding: 10px;
   border: none;
-  border-right: 1px solid #ddd;
+  border-right: 1px solid rgba(221, 221, 221, 0.2196078431);
 }
 
 .chat-input button {

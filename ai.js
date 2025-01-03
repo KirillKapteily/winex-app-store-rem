@@ -182,6 +182,7 @@ class ChatBot {
         "whatsapp": "whatsapp is a messaging app that allows you to send messages, make voice and video calls, and share media.",
         "gimp": "gimp is a free and open-source image editor used for retouching photos and creating graphics.",
         "canva": "canva is a graphic design platform that allows you to create social media graphics, presentations, and more.",
+        "apple tv": "Apple TV + is a subscription-based streaming service offering original TV shows, movies, and documentaries.",
     };
 }
 

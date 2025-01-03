@@ -1,24 +1,13 @@
 body{
-   
-   // animation-name: backgroundy;
-   //  animation-duration: 5s;
-   //    animation-delay: 1s;
-
-// background-image: url("../../images/back.svg");
-// background-size: cover;
-// background: linear-gradient(to bottom, #ffeccf, #ffffff);
 background: linear-gradient(to bottom, #cfecff, #ffffff);
+}
 
+.dark-mode {
+   background-color: #121212;
+   color: #ffffff;
+}
 
-// @keyframes backgroundy {
-//    0%{
-//       background-image: url(../../images/fireworks.gif);
-//       background-repeat: no-repeat;
-//       background-size: cover;
-//    }
-   
-//        100%{
-//          background: linear-gradient(to bottom, #cfecff, #ffffff);
-//        }
-//    }
+.light-mode {
+   background-color: #ffffff;
+   color: #000000;
 }

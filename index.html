@@ -12,7 +12,7 @@
   <title>WinexAppStore</title>
 </head>
 
-<body>
+<body class="light-mode">
   <header>
     <div class="container h-p">
       <a href="#" class="logow">WinexAppStore</a>
@@ -45,6 +45,11 @@
           <a href="indexlinux.html" class="menu-link">Change OS to Linux</a>
         </li>
       </ul>
+      <!-- <ul class="header-list">
+        <li class="header-item">
+          <a href="https://linuxappstoreremastered.netl" class="menu-link">Try Linux App Store from </a>
+        </li>
+      </ul> -->
     </div>
   </header>
   <main>
@@ -60,7 +65,9 @@
           <div class="chat-messages" id="chat-messages"></div>
           <div class="chat-input">
             <input type="text" id="user-input" placeholder="Message" class="ai-input">
-            <button onclick="sendMessage()">Send Message</button>
+            <button onclick="sendMessage()"><svg class="go">
+              <use href="../images/symbol-defs-4.svg#icon-go" width="20" height="20"></use>
+          </svg></button>
           </div>
         </div>
       </div>
@@ -72,7 +79,7 @@
             <img src="./images/appsscreens/githubdesk-1.png" alt="Slide 3">
             <img src="./images/appsscreens/applemusic-1.jpg" alt="Slide 4">
             <img src="./images/appsscreens/zoom-1.png" alt="Slide 5">
-
+            <img src="./images/appsscreens/apple-tv-1.jpeg" alt="Slide 5">
           </div>
           <button class="prev">&#8592;</button>
           <button class="next">&#8594;</button>
@@ -204,7 +211,10 @@
               src="images/anydesk-svgrepo-com.svg" alt="AnyDesk" class="radius" width="139">
             <h3 class="card-title">AnyDesk</h3>
           </a></li>
-          
+          <li class="main-item"><a href="./html/docker.html" class="main-link"><img class="img"
+            src="images/docker.svg" alt="AnyDesk" class="radius" width="139">
+          <h3 class="card-title">Docker</h3>
+        </a></li>
         <li class="main-item"><a href="./html/zoomdow.html" class="main-link"><img class="img" src="images/zoom.svg"
               alt="zoom" width="139">
             <h3 class="card-title">Zoom</h3>
@@ -269,6 +279,7 @@
           <li class="footer-item"><a href="https://github.com/KirillKapteily" class="footer-link">GitHub</a></li>
         </ul>
       </div>
+      <p>Version 1.0 Beta 7</p>
     </div>
 
     </div>
@@ -277,6 +288,7 @@
 
 </body>
 <script src="ai.js"></script>
+<script src="theme.js"></script>
 <script src="script.js"></script>
 
 </html>
