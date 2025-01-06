@@ -93,6 +93,8 @@ class ChatBot {
         "canva": "canva is a graphic design platform that allows you to create social media graphics, presentations, and more.",
         "apple tv": "Apple TV + is a subscription-based streaming service offering original TV shows, movies, and documentaries.",
         "docker": "docker is a platform for developing, shipping, and running applications in containers.",
+        "netflix": "Netflix is a popular streaming service offering a wide variety of TV shows, movies, and documentaries.",
+        "apple devices": "Apple Devices are a program for managing and organizing your apple devices.",
     };
 }
 
