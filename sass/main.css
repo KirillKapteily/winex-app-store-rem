@@ -658,6 +658,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 100px;
   margin-bottom: 30px;
 }
 
@@ -713,7 +714,7 @@ ul {
 }
 
 .chat-header {
-  background: rgba(255, 255, 255, 0);
+  background: rgba(255, 255, 255, 0.0392156863);
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
   color: rgb(0, 0, 0);

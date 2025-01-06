@@ -2,6 +2,7 @@
 display: flex;
 align-items: center;
 justify-content: center;
+padding-top: 100px;
     // transform: translate(-50%, -50%);
     margin-bottom: 30px;
 }
@@ -57,7 +58,7 @@ z-index: 1000000;
 }
 
 .chat-header {
-    background: #ffffff00;
+    background: #ffffff0a;
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
     color: rgb(0, 0, 0);
