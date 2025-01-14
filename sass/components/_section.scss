@@ -97,6 +97,7 @@ border: rgba(0, 213, 255, 0.11) 1px solid;
     max-width: 1000px;
     overflow: hidden;
     left: 100px;
+    border-radius: 30px;
 }
 
 .slides {
@@ -163,20 +164,26 @@ border-radius: 20px;
 // }
 
 .ad-img{
-    width: 100%;
-    height: 100%;
+width: 320px;
     border-radius: 20px;
 display: flex;
 justify-content: center;
 align-items: center;
-filter: brightness(0.5);
+transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
 
+
+&:hover{
+    transform: scale(1.1);
+}
 }
 
 .ad{
     background-image: url("../../images/linuxappstorefromvova.png");
+    background-color: rgba(0, 145, 255, 0.061);
+    border: rgba(0, 145, 255, 0.061) 1px solid ;
+    border-radius: 30px;
     margin-bottom: 30px;
-    width: 1200px;
+    max-width: 1200px;
     height: 500px;
     background-size: cover;
 
@@ -215,6 +222,13 @@ filter: brightness(0.5);
     padding: 10px;
     cursor: pointer;
     border-radius: 20px;
+
+    transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+
+
+&:hover{
+    transform: scale(1.1);
+}
 }
 
 .ad-list{

@@ -95,6 +95,7 @@ class ChatBot {
         "docker": "docker is a platform for developing, shipping, and running applications in containers.",
         "netflix": "Netflix is a popular streaming service offering a wide variety of TV shows, movies, and documentaries.",
         "apple devices": "Apple Devices are a program for managing and organizing your apple devices.",
+        "arduino": "arduino is an open-source electronics platform based on easy-to-use hardware and software.",
     };
 }
 
