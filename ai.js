@@ -96,6 +96,11 @@ class ChatBot {
         "netflix": "Netflix is a popular streaming service offering a wide variety of TV shows, movies, and documentaries.",
         "apple devices": "Apple Devices are a program for managing and organizing your apple devices.",
         "arduino": "arduino is an open-source electronics platform based on easy-to-use hardware and software.",
+        "instagram": "instagram is a social media platform for sharing photos, videos, and stories with friends and followers.",
+        "facebook": "facebook is a social media platform for sharing photos, videos, and stories with friends and followers.",
+        "threads": "threads is a messaging app that allows you to communicate with close friends in a private space.",
+        "microsoft pc manager": "microsoft pc manager is a software that helps you manage your pc.",
+        "ms pc manager": "microsoft pc manager is a software that helps you manage your pc.",
     };
 }
 

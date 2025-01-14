@@ -706,6 +706,10 @@ ul {
   fill: rgb(0, 119, 255);
 }
 
+.rounded {
+  border-radius: 30px;
+}
+
 .download__ico {
   transition: transform 0.1s;
   fill: white;
