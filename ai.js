@@ -63,6 +63,7 @@ class ChatBot {
         "bye": "bye, thanks for testing",
         "goodbye": "goodbye, thanks for testing",
         "thanks": "you're welcome",
+        "lol": "ha",
         "firefox": "Firefox is a web browser used for browsing the internet securely and efficiently.",
         "github desktop": "GitHub Desktop is a tool for managing Git repositories with a user-friendly interface.",
         "telegram": "Telegram is a messaging app offering fast, secure, and cloud-based communication.",
@@ -101,6 +102,7 @@ class ChatBot {
         "threads": "threads is a messaging app that allows you to communicate with close friends in a private space.",
         "microsoft pc manager": "microsoft pc manager is a software that helps you manage your pc.",
         "ms pc manager": "microsoft pc manager is a software that helps you manage your pc.",
+        "evernote": "Evernote is a note-taking app that allows you to capture ideas, organize notes, and collaborate with others.",
     };
 }
 
