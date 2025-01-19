@@ -44,7 +44,8 @@ border-radius: 30px;
 transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s, margin cubic-bezier(0.075, 0.82, 0.165, 1) 1s, box-shadow cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
 background-color: rgba(0, 145, 255, 0.061);
 border: rgba(0, 145, 255, 0.061) 1px solid;
-box-shadow: 5px 10px 10px rgba(0, 145, 255, 0.321);
+filter: drop-shadow(0 0 10px rgba(0, 145, 255, 0.321));
+// box-shadow: 5px 10px 10px rgba(0, 145, 255, 0.321);
 
 
 &:hover{
@@ -52,7 +53,7 @@ box-shadow: 5px 10px 10px rgba(0, 145, 255, 0.321);
 transform: scale(1.1);
 margin: 1px 20px;
 // box-shadow: 10px 10px 10px rgba(0, 145, 255, 0.443);
-box-shadow: 10px 10px 10px rgba(0, 145, 255, 0.443);
+box-shadow: 10px 10px 10px rgba(0, 145, 255, 0.336);
 border: rgba(0, 213, 255, 0.11) 1px solid;
 }
 
@@ -168,6 +169,7 @@ border-radius: 20px;
     list-style: none;
     gap: 27px;
     align-items: center;
+    
 }
 
 .slide {
@@ -179,9 +181,11 @@ border-radius: 20px;
     box-sizing: border-box;
     background-color: rgba(0, 145, 255, 0.061);
     border: rgba(0, 145, 255, 0.061) 1px solid ;
+    box-shadow: 5px 10px 10px rgba(0, 145, 255, 0.321);
     border-radius: 30px;
     display: flex;
     align-items: center;
+    
 }
 
 .slide-img {
@@ -208,12 +212,14 @@ button.next {
     top: 50%;
     transform: translateY(-50%);
     background: #33333300;
+    backdrop-filter: blur(3px);
     color: white;
     border: white 1px solid;
     border-radius: 50px;
     padding: 50px 10px;
     padding: 10px;
     cursor: pointer;
+       filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.835));
 }
 
 .slide-img{
@@ -382,7 +388,7 @@ transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
     justify-content: center;
     background-color: rgba(0, 145, 255, 0.142);
     backdrop-filter: blur(10px);
-    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+    text-shadow: rgb(255, 255, 255) 1px 0 10px;
     color: rgb(0, 0, 0);
     padding: 10px;
     border:rgba(0, 145, 255, 0.394) ;

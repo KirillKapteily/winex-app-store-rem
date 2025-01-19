@@ -55,6 +55,30 @@ transition: transform 1s, fill 1s;
     border-radius: 30px;
 }
 
+.safe-p{
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.safe-p-m{
+    font-size: 20px;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.backdropload-2{
+    background-color: rgba(0, 145, 255, 0.061);
+    border: rgba(0, 145, 255, 0.061) 1px solid ;
+    border-radius: 30px;
+    height: auto;
+    padding: 10px 10px;
+    
+}
+
 .download__ico{
     transition: transform 0.1s;
     fill: white;
