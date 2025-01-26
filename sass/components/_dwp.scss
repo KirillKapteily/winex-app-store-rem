@@ -8,6 +8,10 @@
     padding: 10px 10px;
 }
 
+.download-title{
+    font-size: 25px;
+}
+
 ul{
     padding-inline-start: 0px;
 
@@ -30,6 +34,23 @@ padding: 10px 10px;
 
 .download__p{
     margin-left: 30px;
+}
+
+.download__copyright{
+    margin-left: 30px;
+    text-align: center;
+}
+
+.copyright{
+    fill: rgb(0, 157, 255);
+    width: 80px;
+    height: 80px;
+    transition: transform 1s, fill 1s;
+    
+    &:hover{
+        transform: translateY(-10px);
+        fill: rgb(0, 119, 255);
+    }
 }
 
 .download__safe{
@@ -155,4 +176,9 @@ letter-spacing: 1px;
 
     }
     
+}
+
+.download__code{
+    margin-top: 30px;
+    margin-bottom: 30px;
 }

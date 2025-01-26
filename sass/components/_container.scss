@@ -104,6 +104,19 @@ width: 320px!important;
         max-width: 768px;
     }
 
+.download__copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // margin: 0 auto!important;
+}
+
+    .slide-img{
+        width: 292px;
+        height: auto;
+       }
+
     .slide{
         width: 320px!important;
         height: 480px!important;
@@ -122,6 +135,10 @@ width: 320px!important;
 
         .slide-title {
 font-size: 16px;
+        }
+
+        .download__safe {
+            margin-left: 10px!important;
         }
 
 }

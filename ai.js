@@ -1,4 +1,3 @@
-
 const modal = document.getElementById("chat-modal");
 
 function openChat() {
@@ -35,12 +34,19 @@ class ChatBot {
     // Метод для обработки сообщения
     async getResponse(message) {
         const lowerCaseMessage = message.toLowerCase();
-        // Если сообщение соответствует известным фразам, возвращаем локальный ответ
+        let collectedResponses = [];
+
+        // Проверяем ключевые слова и добавляем ответы в массив
         for (let key in this.responses) {
             const regex = new RegExp(`\\b${key}\\b`, 'i');
             if (regex.test(lowerCaseMessage)) {
-                return this.responses[key];
+                collectedResponses.push(this.responses[key]);
             }
+        }
+
+        // Если есть локальные ответы, объединяем их
+        if (collectedResponses.length > 0) {
+            return collectedResponses.join(' ');
         }
 
         // Если нет подходящего локального ответа, обращаемся к API Hugging Face
@@ -49,11 +55,11 @@ class ChatBot {
 
     // Локальные ответы для различных команд
     responses = {
-        "hello": "hello, what can I help with?",
-        "hi": "hi, what can I help with?",
-        "hey": "hi, how can I help?",
-        "how are you": "i'm a bot, so i'm always fine",
-        "what do you do": "i'm a chatbot, here to help you with any questions you have",
+        "hello": "hello",
+        "hi": "hi",
+        "hey": "hi ",
+        "how are you": "i'm a Winex AI, so i'm always fine",
+        "what do you do": "i'm a Winex AI, here to help you with any questions you have",
         "what is your purpose": "to assist you with any questions or tasks you have",
         "who created you": "i was created by a Kirill to help with answering questions",
         "who is your creator": "my creator is Kirill",
@@ -68,8 +74,8 @@ class ChatBot {
         "github desktop": "GitHub Desktop is a tool for managing Git repositories with a user-friendly interface.",
         "telegram": "Telegram is a messaging app offering fast, secure, and cloud-based communication.",
         "anydesk": "AnyDesk is a remote desktop software that allows you to control devices from a distance.",
-        "google_chrome": "Google Chrome is a popular web browser known for its speed and integration with Google services.",
-        "supermium": "Supermium is an application for premium content or features (specific details depend on context).",
+        "google chrome": "Google Chrome is a popular web browser known for its speed and integration with Google services.",
+        "supermium": "Supermium is an Up to date browser for outdated version of windows.",
         "vs code": "Visual Studio Code (VS Code) is a powerful code editor for various programming languages.",
         "dropbox": "Dropbox is a cloud storage service used for saving and sharing files online.",
         "spotify": "Spotify is a music streaming platform providing access to millions of songs and podcasts.",
@@ -86,22 +92,23 @@ class ChatBot {
         "onedrive": "OneDrive is a cloud storage service by Microsoft for storing, syncing, and sharing files.",
         "viber": "Viber is a messaging and voice call app that allows free communication worldwide.",
         "figma": "Figma is a collaborative design tool for creating user interfaces, prototypes, and more.",
+        "pixso": "Pxso is a collaborative design tool for creating user interfaces, prototypes, with free dev mode. Like figma.",
         "apple music": "Apple Music is a music streaming service offering a large library of songs and curated playlists.",
-        "zoom": "zoom is Zoom is a popular video conferencing software that allows individuals and organizations to host virtual meetings.",
-        "bandicam": "bandicam is a screen recording software that allows you to capture your screen activity with high quality.",
-        "whatsapp": "whatsapp is a messaging app that allows you to send messages, make voice and video calls, and share media.",
-        "gimp": "gimp is a free and open-source image editor used for retouching photos and creating graphics.",
-        "canva": "canva is a graphic design platform that allows you to create social media graphics, presentations, and more.",
-        "apple tv": "Apple TV + is a subscription-based streaming service offering original TV shows, movies, and documentaries.",
-        "docker": "docker is a platform for developing, shipping, and running applications in containers.",
+        "zoom": "Zoom is a popular video conferencing software that allows individuals and organizations to host virtual meetings.",
+        "bandicam": "Bandicam is a screen recording software that allows you to capture your screen activity with high quality.",
+        "whatsapp": "WhatsApp is a messaging app that allows you to send messages, make voice and video calls, and share media.",
+        "gimp": "GIMP is a free and open-source image editor used for retouching photos and creating graphics.",
+        "canva": "Canva is a graphic design platform that allows you to create social media graphics, presentations, and more.",
+        "apple tv": "Apple TV+ is a subscription-based streaming service offering original TV shows, movies, and documentaries.",
+        "docker": "Docker is a platform for developing, shipping, and running applications in containers.",
         "netflix": "Netflix is a popular streaming service offering a wide variety of TV shows, movies, and documentaries.",
-        "apple devices": "Apple Devices are a program for managing and organizing your apple devices.",
-        "arduino": "arduino is an open-source electronics platform based on easy-to-use hardware and software.",
-        "instagram": "instagram is a social media platform for sharing photos, videos, and stories with friends and followers.",
-        "facebook": "facebook is a social media platform for sharing photos, videos, and stories with friends and followers.",
-        "threads": "threads is a messaging app that allows you to communicate with close friends in a private space.",
-        "microsoft pc manager": "microsoft pc manager is a software that helps you manage your pc.",
-        "ms pc manager": "microsoft pc manager is a software that helps you manage your pc.",
+        "apple devices": "Apple Devices are a program for managing and organizing your Apple devices.",
+        "arduino": "Arduino is an open-source electronics platform based on easy-to-use hardware and software.",
+        "instagram": "Instagram is a social media platform for sharing photos, videos, and stories with friends and followers.",
+        "facebook": "Facebook is a social media platform for sharing photos, videos, and stories with friends and followers.",
+        "threads": "Threads is a messaging app that allows you to communicate with close friends in a private space.",
+        "microsoft pc manager": "Microsoft PC Manager is a software that helps you manage your PC.",
+        "ms pc manager": "Microsoft PC Manager is a software that helps you manage your PC.",
         "evernote": "Evernote is a note-taking app that allows you to capture ideas, organize notes, and collaborate with others.",
     };
 }
@@ -118,20 +125,18 @@ function sendMessage() {
     const userMessage = inputField.value.trim();
     if (!userMessage) return;
 
-// Добавление индикатора загрузки
-const loadingDiv = document.createElement("div");
-loadingDiv.className = "message bot loading";
-loadingDiv.textContent = "Typing...";
-messagesContainer.appendChild(loadingDiv);
-
-
+    // Добавление индикатора загрузки
+    const loadingDiv = document.createElement("div");
+    loadingDiv.className = "message bot loading";
+    loadingDiv.textContent = "Typing...";
+    messagesContainer.appendChild(loadingDiv);
 
     // Показываем сообщение пользователя
     const userDiv = document.createElement("div");
     userDiv.className = "message user";
     userDiv.textContent = userMessage;
     messagesContainer.appendChild(userDiv);
-    
+
     // Получаем ответ от бота
     bot.getResponse(userMessage).then(botResponse => {
         const botDiv = document.createElement("div");
@@ -139,14 +144,13 @@ messagesContainer.appendChild(loadingDiv);
         botDiv.textContent = botResponse;
         messagesContainer.appendChild(botDiv);
 
+        // Удаляем индикатор загрузки
+        messagesContainer.removeChild(loadingDiv);
+
         messagesContainer.scrollTop = messagesContainer.scrollHeight;
         inputField.value = "";
     });
 }
 
-
-
 // Пример вызова функции
 document.getElementById("send-button").addEventListener("click", sendMessage);
-
-
