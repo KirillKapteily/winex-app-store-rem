@@ -24,12 +24,29 @@
 <body>
     <header>
         <div class="container h-p">
-            <a href="../index.html" class="logo">WinexAppStore</a>
-            <ul class="header-list">
-                <li class="header-item"><a href="#" class="menu-link">Games</a></li>
-            </ul>
+          <a href="../index.html" class="logow">WinexAppStore</a>
+          <div id="sidebar" class="sidebar">
+            <a href="#" class="closebtn" onclick="closeMenu()">&times;</a>
+            <a href="#" class="sidebar-link">Games</a>
+            <a href="../indexmacos.html" class="sidebar-link">Change OS to MacOS</a>
+            <a href="../indexlinux.html" class="sidebar-link">Change OS to Linux</a>
+    
+    
+          </div>
+          <button class="openbtn" onclick="openMenu()">☰</button>
+          
+          <ul class="header-list">
+            <li class="header-item"><a href="#" class="menu-link">Games</a></li>
+            <li class="header-item">
+              <a href="../indexmacos.html" class="menu-link">Change OS to MacOS</a>
+            </li>
+    
+            <li class="header-item">
+              <a href="../indexlinux.html" class="menu-link">Change OS to Linux</a>
+            </li>
+          </ul>
         </div>
-    </header>
+      </header>
     <main>
         <div class="container">
             <div class="download-info">
@@ -124,7 +141,7 @@
               <li class="footer-item"><a href="https://github.com/KirillKapteily" class="footer-link">GitHub</a></li>
             </ul>
           </div>
-          <p>Version 1.0 Pre-release 2</p>
+          <p>Version 1.0 Pre-release 3</p>
         </div>
     
         </div>
@@ -132,5 +149,55 @@
       </footer>
 </body>
 <!-- <svg class=""><use href=""></use></svg> -->
+<script>
+    const slides = document.querySelector('.slides');
+    const images = document.querySelectorAll('.slides img');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
 
+    let currentIndex = 0;
+    const totalSlides = images.length;
+
+    function updateSlider() {
+        slides.style.transform = `translateX(${-currentIndex * 100}%)`;
+    }
+
+    nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % totalSlides; // цикл на последний слайд
+        updateSlider();
+    });
+
+    prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides; // цикл на первый слайд
+        updateSlider();
+    });
+
+    (() => {
+        const refs = {
+            openModalBtn: document.querySelector("[data-modal-open]"),
+            closeModalBtn: document.querySelector("[data-modal-close]"),
+            modal: document.querySelector("[data-modal]"),
+        };
+
+        refs.openModalBtn.addEventListener("click", toggleModal);
+        refs.closeModalBtn.addEventListener("click", toggleModal);
+
+        function toggleModal() {
+            refs.modal.classList.toggle("is-hidden");
+            document.body.classList.toggle("no-scroll");
+        }
+    })();
+
+    function openMenu() {
+        document.getElementById("sidebar").style.left = "0";
+        document.getElementById("main").style.marginLeft = "250px"; // Смещение основного контента
+    }
+
+    function closeMenu() {
+        document.getElementById("sidebar").style.left = "-250px"; // Скрыть меню
+        document.getElementById("main").style.marginLeft = "0"; // Вернуть основной контент
+    }
+
+
+</script>
 </html>

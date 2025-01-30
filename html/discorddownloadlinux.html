@@ -24,11 +24,29 @@
 <body>
     <header>
         <div class="container h-p">
-            <a href="../indexlinux.html" class="logow">WinexAppStore</a>
-            <ul class="header-list">
-                <li class="header-item"><a href="#" class="menu-link">Games</a></li>
+          <a href="../indexlinux.html" class="logow">WinexAppStore</a>
+          <div id="sidebar" class="sidebar">
+            <a href="#" class="closebtn" onclick="closeMenu()">&times;</a>
+            <a href="#" class="sidebar-link">Games</a>
+            <a href="../index.html" class="sidebar-link">Change OS to Windows</a>
+            <a href="../indexmacos.html" class="sidebar-link">Change OS to macOS</a>
+    
+    
+          </div>
+          <button class="openbtn" onclick="openMenu()">☰</button>
+          
+          <ul class="header-list">
+            <li class="header-item"><a href="#" class="menu-link">Games</a></li>
+            <li class="header-item">
+              <a href="../index.html" class="menu-link">Change OS to Windows</a>
+            </li>
+    
+            <li class="header-item">
+              <a href="../indexmacos.html" class="menu-link">Change OS to macOS</a>
+            </li>
+          </ul>
         </div>
-    </header>
+      </header>
     <main>
         <div class="container">
             <div class="download-info">
@@ -54,10 +72,10 @@
             </div>
             <h3>Group chat where it's always fun</h3>
             <a href="https://discord.com/api/download?platform=linux&format=deb" class="download-button"><svg class="download__ico">
-                    <use href="/images/symbol-defs1.svg#icon-download" width="30" height="30"></use>
+                    <use href="../images/symbol-defs-2.svg#icon-download" width="30" height="30"></use>
                 </svg>Download DEB</a>
                 <a href="https://discord.com/api/download?platform=linux&format=tar.gz" class="download-button"><svg class="download__ico">
-                    <use href="/images/symbol-defs1.svg#icon-download" width="30" height="30"></use>
+                    <use href="../images/symbol-defs-2.svg#icon-download" width="30" height="30"></use>
                 </svg>Download tar.gz</a>
             <ul class="img-list">
                 <li class="img-item"><a href="../images/appsscreens/ds-previeve.webp"><img
@@ -108,7 +126,7 @@
               <li class="footer-item"><a href="https://github.com/KirillKapteily" class="footer-link">GitHub</a></li>
             </ul>
           </div>
-          <p>Version 1.0 Pre-release 2</p>
+          <p>Version 1.0 Pre-release 3</p>
         </div>
     
         </div>
@@ -116,5 +134,55 @@
       </footer>
 </body>
 <!-- <svg class=""><use href=""></use></svg> -->
+<script>
+    const slides = document.querySelector('.slides');
+    const images = document.querySelectorAll('.slides img');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
 
+    let currentIndex = 0;
+    const totalSlides = images.length;
+
+    function updateSlider() {
+        slides.style.transform = `translateX(${-currentIndex * 100}%)`;
+    }
+
+    nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % totalSlides; // цикл на последний слайд
+        updateSlider();
+    });
+
+    prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides; // цикл на первый слайд
+        updateSlider();
+    });
+
+    (() => {
+        const refs = {
+            openModalBtn: document.querySelector("[data-modal-open]"),
+            closeModalBtn: document.querySelector("[data-modal-close]"),
+            modal: document.querySelector("[data-modal]"),
+        };
+
+        refs.openModalBtn.addEventListener("click", toggleModal);
+        refs.closeModalBtn.addEventListener("click", toggleModal);
+
+        function toggleModal() {
+            refs.modal.classList.toggle("is-hidden");
+            document.body.classList.toggle("no-scroll");
+        }
+    })();
+
+    function openMenu() {
+        document.getElementById("sidebar").style.left = "0";
+        document.getElementById("main").style.marginLeft = "250px"; // Смещение основного контента
+    }
+
+    function closeMenu() {
+        document.getElementById("sidebar").style.left = "-250px"; // Скрыть меню
+        document.getElementById("main").style.marginLeft = "0"; // Вернуть основной контент
+    }
+
+
+</script>
 </html>
