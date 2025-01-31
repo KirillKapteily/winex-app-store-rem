@@ -1,5 +1,6 @@
-body{
-background: linear-gradient(to bottom, #cfecff, #ffffff);
+body {
+   background: linear-gradient(to bottom, #cfecff, #ffffff);
+   margin: 3px 3px;
 }
 
 .dark-mode {
@@ -10,4 +11,5 @@ background: linear-gradient(to bottom, #cfecff, #ffffff);
 .light-mode {
    background-color: #ffffff;
    color: #000000;
+
 }

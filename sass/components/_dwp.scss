@@ -48,7 +48,7 @@ padding: 10px 10px;
     transition: transform 1s, fill 1s;
     
     &:hover{
-        transform: translateY(-10px);
+        transform: rotate(360deg);
         fill: rgb(0, 119, 255);
     }
 }

@@ -14,22 +14,33 @@ class ChatBot {
         this.defaultResponse = "Sorry, I can't answer for that.";
     }
 
+
+    
     // Функция для получения ответа от модели Hugging Face
-    async getResponseFromHuggingFace(text) {
+   async getResponseFromHuggingFace(text) {
+    try {
         const response = await fetch('https://api-inference.huggingface.co/models/gpt2', {
             method: 'POST',
             headers: {
                 'Authorization': `Bearer ${this.apiKey}`,
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({
-                inputs: text
-            })
+            body: JSON.stringify({ inputs: text })
         });
 
+        if (!response.ok) {
+            throw new Error(`API Error: ${response.statusText}`);
+        }
+
         const data = await response.json();
-        return data[0] ? data[0].generated_text : this.defaultResponse;
+        return data.generated_text || this.defaultResponse;
+    } catch (error) {
+        console.error("Hugging Face API error:", error);
+        return this.defaultResponse;
     }
+}
+
+
 
     // Метод для обработки сообщения
     async getResponse(message) {
@@ -67,9 +78,12 @@ class ChatBot {
         "what can you do": "i can help answer questions, provide information, and assist with tasks",
         "help": "how can I help you?",
         "bye": "bye, thanks for testing",
+        "bye bye": "bye, thanks for testing",
         "goodbye": "goodbye, thanks for testing",
         "thanks": "you're welcome",
+        "thank you": "you're welcome",
         "lol": "ha",
+        "ok": "ok, let me know if you need help with anything else",
         "firefox": "Firefox is a web browser used for browsing the internet securely and efficiently.",
         "github desktop": "GitHub Desktop is a tool for managing Git repositories with a user-friendly interface.",
         "telegram": "Telegram is a messaging app offering fast, secure, and cloud-based communication.",
@@ -95,6 +109,7 @@ class ChatBot {
         "pixso": "Pxso is a collaborative design tool for creating user interfaces, prototypes, with free dev mode. Like figma.",
         "apple music": "Apple Music is a music streaming service offering a large library of songs and curated playlists.",
         "zoom": "Zoom is a popular video conferencing software that allows individuals and organizations to host virtual meetings.",
+        "bitdefender": "BitDefender is an antivirus software that protects your devices from malware, ransomware, and other threats.",
         "bandicam": "Bandicam is a screen recording software that allows you to capture your screen activity with high quality.",
         "whatsapp": "WhatsApp is a messaging app that allows you to send messages, make voice and video calls, and share media.",
         "gimp": "GIMP is a free and open-source image editor used for retouching photos and creating graphics.",

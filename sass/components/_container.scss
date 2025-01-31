@@ -1,150 +1,160 @@
-.container{
+.container {
     width: 1200px;
     margin: 0 auto;
 }
 
 
-@media (min-width:320px) and (max-width:480px){
-    .container{
+@media (min-width:320px) and (max-width:480px) {
+    .container {
         max-width: 320px;
     }
 
-.modal{
-left: 1px;
-width: 320px;
-}
-    
+
+    .modal {
+        left: 1px;
+        width: 320px;
+    }
+
     .download__safe {
-        margin-left: 0px!important;
+        margin-left: 0px !important;
+    }
+
+    .download__copyright {
+        margin-left: 0px !important;
     }
 
 
-.img-item{
-    width: 300px;
-}
+    .img-item {
+        width: 300px;
+    }
 
-.download__p{
-    margin-left: 0px!important;
-}
+    .download__p {
+        margin-left: 0px !important;
+    }
 
-.backdropload{
-width: 320px;
-}
+    .backdropload {
+        width: 320px;
+    }
 
-.safe{
-    margin: 0px;
-}
+    .safe {
+        margin: 0px;
+    }
 
 
-.img-wrap{
-    width: 300px;
-    height: auto;
-}
+    .img-wrap {
+        width: 300px;
+        height: auto;
+    }
 
-.download-button{
-    display: flex;
-    justify-content: center;
-}
+    .download-button {
+        display: flex;
+        justify-content: center;
+    }
 
-    .download-info{
+    .download-info {
         display: flex;
         justify-content: center;
         gap: 30px;
         align-items: center;
     }
 
-.header-item{
-    display: none;
-}
-
-.menu-link{
-    display: none;
-}
-
-// .ad{
-//     height: 600px!important;
-// }
-
-.slides{
-    gap: 0px;
-}
-
-    .slider{
-        max-width: 320px;
-     }
-
-
-     .backdropload-2{
-        width: 320px!important;
-        padding: 10px 10px!important;
-     }
-     
-    .backdropload{
-width: 320px!important;
+    .header-item {
+        display: none;
     }
 
-    .slide-img{
+    .menu-link {
+        display: none;
+    }
+
+    // .ad{
+    //     height: 600px!important;
+    // }
+
+    .slides {
+        gap: 0px;
+    }
+
+    .slider {
+        max-width: 320px;
+    }
+
+
+    .backdropload-2 {
+        width: 320px !important;
+        padding: 10px 10px !important;
+    }
+
+    .backdropload {
+        width: 320px !important;
+    }
+
+    .slide-img {
         width: 312px;
         height: 268px;
-       }
-
-    .ad-titlee-2{
-        font-size: 20px!important;
     }
 
-    .slide{
-        width: 320px!important;
-        height: 480px!important;
-        padding: 20px 5px!important;
+    .ad-titlee-2 {
+        font-size: 20px !important;
+    }
+
+    .slide {
+        width: 320px !important;
+        height: 480px !important;
+        padding: 20px 5px !important;
     }
 }
 
-@media (min-width:768px) and (max-width:1199px){
-    .container{
+@media (min-width:768px) and (max-width:1199px) {
+    .container {
         max-width: 768px;
     }
 
-.download__copyright{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    // margin: 0 auto!important;
-}
-
-    .slide-img{
-        width: 292px;
-        height: auto;
-       }
-
-    .slide{
-        width: 320px!important;
-        height: 480px!important;
-        padding: 20px 5px!important;
+    .download__copyright {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 3px !important;
+        // margin: 0 auto!important;
     }
 
-    .openbtn{
+.download__p{
+    margin-left: 5px!important;
+}
+
+    .slide-img {
+        width: 292px;
+        height: auto;
+    }
+
+    .slide {
+        width: 320px !important;
+        height: 480px !important;
+        padding: 20px 5px !important;
+    }
+
+    .openbtn {
         display: none;
-        }
+    }
 
-        .slider {
-            max-width: 720px;
-            height: 600px!important;
-            
-        }
+    .slider {
+        max-width: 720px;
+        height: 600px !important;
 
-        .slide-title {
-font-size: 16px;
-        }
+    }
 
-        .download__safe {
-            margin-left: 10px!important;
-        }
+    .slide-title {
+        font-size: 16px;
+    }
+
+    .download__safe {
+        margin-left: 1px !important;
+    }
 
 }
-@media (min-width:1200px){
-.openbtn{
-display: none;
-}
-}
 
+@media (min-width:1200px) {
+    .openbtn {
+        display: none;
+    }
+}
