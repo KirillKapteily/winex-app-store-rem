@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
     content="Winex App Store Discover the ultimate app library with Winex App Store, your secure and modern destination for software on Windows, macOS, Android, and Linux. Whether you're seeking productivity tools, creative software, or the latest games, Winex App Store offers a curated selection to meet all your digital needs. ">
-  <link rel="stylesheet" href="../../../sass/main.css" />
+  <link rel="stylesheet" href="../../sass/main.css" />
   <link rel="icon" href="/images/logo1.png">
   <title>WinexAppStore</title>
 </head>
@@ -104,6 +104,56 @@
   </footer>
 
 </body>
-<script src="../../script.js"></script>
+<script>
+  const slides = document.querySelector('.slides');
+const images = document.querySelectorAll('.slides img');
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
+
+let currentIndex = 0;
+const totalSlides = images.length;
+
+function updateSlider() {
+    slides.style.transform = `translateX(${-currentIndex * 100}%)`;
+}
+
+nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % totalSlides; // цикл на последний слайд
+    updateSlider();
+});
+
+prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides; // цикл на первый слайд
+    updateSlider();
+});
+
+(() => {
+    const refs = {
+      openModalBtn: document.querySelector("[data-modal-open]"),
+      closeModalBtn: document.querySelector("[data-modal-close]"),
+      modal: document.querySelector("[data-modal]"),
+    };
+  
+    refs.openModalBtn.addEventListener("click", toggleModal);
+    refs.closeModalBtn.addEventListener("click", toggleModal);
+  
+    function toggleModal() {
+      refs.modal.classList.toggle("is-hidden");
+      document.body.classList.toggle("no-scroll");
+    }
+  })();
+
+  function openMenu() {
+    document.getElementById("sidebar").style.left = "0";
+    document.getElementById("main").style.marginLeft = "250px"; // Смещение основного контента
+}
+
+function closeMenu() {
+    document.getElementById("sidebar").style.left = "-250px"; // Скрыть меню
+    document.getElementById("main").style.marginLeft = "0"; // Вернуть основной контент
+}
+
+
+</script>
 
 </html>
