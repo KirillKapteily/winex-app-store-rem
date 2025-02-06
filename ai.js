@@ -19,7 +19,7 @@ class ChatBot {
     // Функция для получения ответа от модели Hugging Face
    async getResponseFromHuggingFace(text) {
     try {
-        const response = await fetch('https://api-inference.huggingface.co/models/gpt2', {
+        const response = await fetch('https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct', {
             method: 'POST',
             headers: {
                 'Authorization': `Bearer ${this.apiKey}`,

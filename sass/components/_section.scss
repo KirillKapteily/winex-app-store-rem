@@ -35,22 +35,22 @@
     border-radius: 30px;
     padding: 10px 0px;
 
+
 }
 
 .main-item {
-    backdrop-filter: blur(5px);
+    // backdrop-filter: blur(5px);
     border-radius: 30px;
     transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s, margin cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s, box-shadow cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
     background-color: rgba(0, 145, 255, 0.061);
     border: rgba(0, 145, 255, 0.061) 1px solid;
-    box-shadow: 5px 10px 10px rgba(0, 145, 255, 0.181);
-
+    box-shadow: 5px 10px 10px rgba(0, 145, 255, 0.136);
 
     &:hover {
         background-color: rgba(0, 145, 255, 0.142);
-        transform: scale(1.1);
+        transform:scale(1.1);
         margin: 0px 20px;
-        box-shadow: 10px 10px 10px rgba(0, 145, 255, 0.336);
+        box-shadow: 10px 10px 10px rgba(0, 145, 255, 0.297);
     }
 
 }
@@ -216,7 +216,6 @@ button.next {
     padding: 50px 10px;
     padding: 10px;
     cursor: pointer;
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.835));
 }
 
 .slide-img {
@@ -235,7 +234,7 @@ button.next {
 
 .slide-sopnsored {
     font-size: 16px;
-    color: rgb(0, 0, 0);
+    color: black;
 }
 
 .space {
@@ -384,8 +383,8 @@ button.next {
     text-decoration: none;
     justify-content: center;
     background-color: rgba(0, 145, 255, 0.142);
-    backdrop-filter: blur(10px);
-    text-shadow: rgb(255, 255, 255) 1px 0 10px;
+    // backdrop-filter: blur(10px);
+    // text-shadow: rgb(255, 255, 255) 1px 0 10px;
     color: rgb(0, 0, 0);
     padding: 10px;
     border: rgba(0, 145, 255, 0.394);
@@ -410,7 +409,7 @@ button.next {
 
 .ad-item {
     border-color: antiquewhite;
-    backdrop-filter: blur(5px);
+    // backdrop-filter: blur(5px);
     border-radius: 30px;
     transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s, margin cubic-bezier(0.075, 0.82, 0.165, 1) 1s, box-shadow cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
     background-color: rgba(0, 145, 255, 0.061);

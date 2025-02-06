@@ -2,16 +2,7 @@
 body {
   background: linear-gradient(to bottom, #cfecff, #ffffff);
   margin: 3px 3px;
-}
-
-.dark-mode {
-  background-color: #121212;
-  color: #ffffff;
-}
-
-.light-mode {
-  background-color: #ffffff;
-  color: #000000;
+  transition: 0.3s;
 }
 
 .container {
@@ -167,19 +158,17 @@ body {
 }
 
 .main-item {
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
   border-radius: 30px;
   transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s, margin cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s, box-shadow cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
   background-color: rgba(0, 145, 255, 0.061);
   border: rgba(0, 145, 255, 0.061) 1px solid;
-  box-shadow: 5px 10px 10px rgba(0, 145, 255, 0.181);
+  box-shadow: 5px 10px 10px rgba(0, 145, 255, 0.136);
 }
 .main-item:hover {
   background-color: rgba(0, 145, 255, 0.142);
   transform: scale(1.1);
   margin: 0px 20px;
-  box-shadow: 10px 10px 10px rgba(0, 145, 255, 0.336);
+  box-shadow: 10px 10px 10px rgba(0, 145, 255, 0.297);
 }
 
 .main-itemne {
@@ -334,7 +323,6 @@ button.next {
   padding: 50px 10px;
   padding: 10px;
   cursor: pointer;
-  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.835));
 }
 
 .slide-img {
@@ -353,7 +341,7 @@ button.next {
 
 .slide-sopnsored {
   font-size: 16px;
-  color: rgb(0, 0, 0);
+  color: black;
 }
 
 .space {
@@ -475,9 +463,6 @@ button.next {
   text-decoration: none;
   justify-content: center;
   background-color: rgba(0, 145, 255, 0.142);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  text-shadow: rgb(255, 255, 255) 1px 0 10px;
   color: rgb(0, 0, 0);
   padding: 10px;
   border: rgba(0, 145, 255, 0.394);
@@ -500,8 +485,6 @@ button.next {
 
 .ad-item {
   border-color: antiquewhite;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
   border-radius: 30px;
   transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s, margin cubic-bezier(0.075, 0.82, 0.165, 1) 1s, box-shadow cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
   background-color: rgba(0, 145, 255, 0.061);
