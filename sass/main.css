@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  background: linear-gradient(to bottom, #cfecff, #ffffff);
+  background: linear-gradient(to bottom, #cfecff, rgba(255, 255, 255, 0));
   margin: 3px 3px;
   transition: 0.3s;
 }
@@ -13,6 +13,12 @@ body {
 @media (min-width: 320px) and (max-width: 480px) {
   .container {
     max-width: 320px;
+  }
+  .download-title {
+    font-size: 20px !important;
+  }
+  .footer-text {
+    width: 318px !important;
   }
   .modal {
     left: 1px;
@@ -117,6 +123,9 @@ body {
   }
   .download__safe {
     margin-left: 1px !important;
+  }
+  .download-title {
+    font-size: 20px !important;
   }
 }
 @media (min-width: 1200px) {
@@ -841,6 +850,7 @@ footer {
 
 .download-info {
   display: flex;
+  align-items: center;
   margin-bottom: 30px;
   flex-wrap: wrap;
   background-color: rgba(0, 145, 255, 0.061);

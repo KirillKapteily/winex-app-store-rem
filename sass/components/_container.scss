@@ -9,6 +9,13 @@
         max-width: 320px;
     }
 
+    .download-title{
+        font-size: 20px!important;
+            }
+
+.footer-text{
+    width: 318px!important;
+}
 
     .modal {
         left: 1px;
@@ -147,8 +154,22 @@
         font-size: 16px;
     }
 
+// .safe{
+//     width: 40px;
+//     height: 40px;
+// }
+
+// .copyright{
+//     width: 40px;
+//     height: 40px;  
+// }
+
     .download__safe {
         margin-left: 1px !important;
+    }
+
+    .download-title{
+font-size: 20px!important;
     }
 
 }
