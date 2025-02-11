@@ -538,6 +538,12 @@ button.next {
   flex-direction: column;
 }
 
+.width-imp {
+  width: 139px;
+  display: flex;
+  justify-content: center;
+}
+
 .header-list {
   display: flex;
   gap: 0px;
