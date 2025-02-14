@@ -3,6 +3,7 @@ body {
   background: linear-gradient(to bottom, #cfecff, rgba(255, 255, 255, 0));
   margin: 3px 3px;
   transition: 0.3s;
+  font-family: Roboto !important;
 }
 
 .container {
@@ -393,13 +394,6 @@ button.next {
   letter-spacing: 3%;
 }
 
-.dm-sans {
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-
 @media (min-width: 320px) and (max-width: 480px) {
   .slide-img {
     width: 282px;
@@ -471,18 +465,24 @@ button.next {
   align-items: center;
   text-decoration: none;
   justify-content: center;
+  align-items: center;
   background-color: rgba(0, 145, 255, 0.142);
   color: rgb(0, 0, 0);
   padding: 10px;
   border: rgba(0, 145, 255, 0.394);
   cursor: pointer;
   border-radius: 20px;
-  width: 100px;
+  max-width: 150px;
   margin: 0 auto;
   transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
 }
 .ad-buttton:hover {
   transform: scale(1.1);
+}
+
+.position__corrector {
+  position: relative;
+  bottom: 5px;
 }
 
 .ad-list {
@@ -562,7 +562,7 @@ header {
   margin-bottom: 50px;
   background-color: rgba(0, 145, 255, 0.061);
   border: rgba(0, 145, 255, 0.061) 1px solid;
-  box-shadow: 5px 10px 10px rgba(0, 145, 255, 0.321);
+  box-shadow: 5px 10px 10px rgba(0, 145, 255, 0.13);
   border-radius: 50px;
 }
 
@@ -902,8 +902,19 @@ ul {
   transition: transform 1s, fill 1s;
 }
 .copyright:hover {
-  transform: rotate(360deg);
+  animation: rotater 1s;
   fill: rgb(0, 119, 255);
+}
+@keyframes rotater {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(370deg) scale(1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
 }
 
 .download__safe {
@@ -993,7 +1004,18 @@ ul {
   transition: transform 0.5s;
 }
 .product-img:hover {
-  transform: rotate(360deg);
+  animation: rotater 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+@keyframes rotater {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(370deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
 }
 
 .img-list {
@@ -1013,7 +1035,7 @@ ul {
   font-size: 30px;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  background-color: rgba(0, 119, 255, 0.592);
+  background-color: rgb(70, 156, 255);
   transition: background-color cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
 }
 .download-button:hover {

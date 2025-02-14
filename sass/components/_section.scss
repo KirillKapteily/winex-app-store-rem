@@ -8,11 +8,6 @@
 
 .main-link {
     text-decoration: none;
-    // transition: margin cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
-
-    // &:hover{
-    //     margin: 10px;
-    // }
 }
 
 .list-title {
@@ -279,12 +274,12 @@ button.next {
     letter-spacing: 3%;
 }
 
-.dm-sans {
-    font-family: "DM Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-}
+// .dm-sans {
+//     fon1t-family: "DM Sans", sans-serif;
+//     font-optical-sizing: auto;
+//     font-weight: 500;
+//     font-style: normal;
+// }
 
 // @media (min-width:768px) and (max-width:1219px) {
 
@@ -382,6 +377,7 @@ button.next {
     align-items: center;
     text-decoration: none;
     justify-content: center;
+    align-items: center;
     background-color: rgba(0, 145, 255, 0.142);
     // backdrop-filter: blur(10px);
     // text-shadow: rgb(255, 255, 255) 1px 0 10px;
@@ -390,7 +386,7 @@ button.next {
     border: rgba(0, 145, 255, 0.394);
     cursor: pointer;
     border-radius: 20px;
-    width: 100px;
+    max-width: 150px;
     margin: 0 auto;
     transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
 
@@ -398,6 +394,11 @@ button.next {
     &:hover {
         transform: scale(1.1);
     }
+}
+
+.position__corrector{
+    position: relative;
+    bottom: 5px;
 }
 
 .ad-list {
