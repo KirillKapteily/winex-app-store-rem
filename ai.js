@@ -125,6 +125,9 @@ class ChatBot {
         "microsoft pc manager": "Microsoft PC Manager is a software that helps you manage your PC.",
         "ms pc manager": "Microsoft PC Manager is a software that helps you manage your PC.",
         "evernote": "Evernote is a note-taking app that allows you to capture ideas, organize notes, and collaborate with others.",
+        "wine": "wine is a compatibility layer capable of running Windows applications on several POSIX-compliant operating systems",
+        "avast": "Avast is a free antivirus, that protects you from virises for free",
+        "Xcode": "Xcode offers all the tools you need to craft great apps for iPhone, iPad, Apple TV, Apple Watch, Apple Vision Pro, and Mac.",
     };
 }
 
