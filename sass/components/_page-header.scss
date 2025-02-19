@@ -4,10 +4,15 @@ gap: 0px;
 list-style: none;
 }
 
-.logo{
+.logow{
     text-decoration: none;
     color: black;
 font-size: 20px;
+transition: color 1s cubic-bezier(0.19, 1, 0.22, 1);
+
+&:hover{
+  color: #53baff;
+}
 }
 
 header{
@@ -53,9 +58,10 @@ scale: (1.1);
     display: block;
     padding: 10px 20px;
     text-decoration: none;
-    
+    transition: color 1s cubic-bezier(0.19, 1, 0.22, 1);
+
     &:hover{
-      color: rgb(66, 66, 66);
+      color: #53baff;
     }
    }
    

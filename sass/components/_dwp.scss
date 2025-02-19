@@ -164,17 +164,17 @@ ul {
     transition: transform 0.5s;
 
     &:hover {
-        animation: rotater 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        animation: rotater-img 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 
-        @keyframes rotater {
+        @keyframes rotater-img {
             0% {
                 transform: rotate(0deg) scale(1);
             }
 
-            50% {
-                transform: rotate(370deg) scale(1);
+            // 50% {
+            //     transform: rotate(370deg) scale(1);
 
-            }
+            // }
 
             100% {
                 transform: rotate(360deg) scale(1);

@@ -158,6 +158,10 @@ body {
   border: rgba(0, 145, 255, 0.061) 1px solid;
   border-radius: 20px;
   padding: 10px 10px;
+  transition: text-shadow 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.list-title:hover {
+  text-shadow: rgb(0, 0, 0) 1px 0 10px;
 }
 
 .backdropload {
@@ -168,6 +172,8 @@ body {
 }
 
 .main-item {
+  display: flex;
+  justify-content: center;
   border-radius: 30px;
   transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s, margin cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s, box-shadow cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
   background-color: rgba(0, 145, 255, 0.061);
@@ -193,6 +199,10 @@ body {
   background-image: url("../../images/fireworks.gif");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.img {
+  margin: 0 auto;
 }
 
 .imgnewyear {
@@ -550,10 +560,14 @@ button.next {
   list-style: none;
 }
 
-.logo {
+.logow {
   text-decoration: none;
   color: black;
   font-size: 20px;
+  transition: color 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.logow:hover {
+  color: #53baff;
 }
 
 header {
@@ -593,9 +607,10 @@ header {
   display: block;
   padding: 10px 20px;
   text-decoration: none;
+  transition: color 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 .menu-link:hover {
-  color: rgb(66, 66, 66);
+  color: #53baff;
 }
 
 .submenu {
@@ -1004,14 +1019,11 @@ ul {
   transition: transform 0.5s;
 }
 .product-img:hover {
-  animation: rotater 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  animation: rotater-img 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
-@keyframes rotater {
+@keyframes rotater-img {
   0% {
     transform: rotate(0deg) scale(1);
-  }
-  50% {
-    transform: rotate(370deg) scale(1);
   }
   100% {
     transform: rotate(360deg) scale(1);
