@@ -22,11 +22,6 @@
     border: rgba(0, 145, 255, 0.061) 1px solid;
     border-radius: 20px;
     padding: 10px 10px;
-    transition: text-shadow 1s cubic-bezier(0.215, 0.610, 0.355, 1);
-    
-    &:hover{
-        text-shadow: rgb(0, 0, 0) 1px 0 10px;
-    }
 }
 
 .backdropload {
