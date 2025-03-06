@@ -44,7 +44,7 @@
 
     &:hover {
         background-color: rgba(0, 145, 255, 0.142);
-        transform:scale(1.1);
+        transform: scale(1.1);
         margin: 0px 20px;
         box-shadow: 10px 10px 10px rgba(0, 145, 255, 0.297);
     }
@@ -66,8 +66,8 @@
     }
 }
 
-.img{
-   margin: 0 auto;
+.img {
+    margin: 0 auto;
 }
 
 .imgnewyear {
@@ -214,6 +214,11 @@ button.next {
     padding: 50px 10px;
     padding: 10px;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+        background-color: #ffffff6f;
+    }
 }
 
 .slide-img {
@@ -399,7 +404,7 @@ button.next {
     }
 }
 
-.position__corrector{
+.position__corrector {
     position: relative;
     bottom: 5px;
 }
@@ -465,7 +470,7 @@ button.next {
     flex-direction: column;
 }
 
-.width-imp{
+.width-imp {
     width: 139px;
     display: flex;
     justify-content: center;

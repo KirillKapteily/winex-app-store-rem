@@ -339,6 +339,10 @@ button.next {
   padding: 50px 10px;
   padding: 10px;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.button-unifide:hover {
+  background-color: rgba(255, 255, 255, 0.4352941176);
 }
 
 .slide-img {

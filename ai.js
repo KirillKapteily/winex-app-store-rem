@@ -71,6 +71,7 @@ class ChatBot {
         "hey": "hi ",
         "how are you": "i'm a Winex AI, so i'm always fine",
         "what do you do": "i'm a Winex AI, here to help you with any questions you have",
+        "what do u do": "i'm a Winex AI, here to help you with any questions you have",
         "what is your purpose": "to assist you with any questions or tasks you have",
         "who created you": "i was created by a Kirill to help with answering questions",
         "who is your creator": "my creator is Kirill",
@@ -83,6 +84,7 @@ class ChatBot {
         "thanks": "you're welcome",
         "thank you": "you're welcome",
         "lol": "ha",
+        "haha": "ha",
         "ok": "ok, let me know if you need help with anything else",
         "firefox": "Firefox is a web browser used for browsing the internet securely and efficiently.",
         "github desktop": "GitHub Desktop is a tool for managing Git repositories with a user-friendly interface.",
@@ -128,6 +130,7 @@ class ChatBot {
         "wine": "wine is a compatibility layer capable of running Windows applications on several POSIX-compliant operating systems",
         "avast": "Avast is a free antivirus, that protects you from virises for free",
         "Xcode": "Xcode offers all the tools you need to craft great apps for iPhone, iPad, Apple TV, Apple Watch, Apple Vision Pro, and Mac.",
+        "pages": "Pages is a powerful word processor that lets you create stunning documents.",
     };
 }
 

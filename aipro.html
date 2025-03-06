@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новый Локальный Chatbot</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@xenova/transformers"></script>
+    <script type="module" src="aialpha.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        #chat { max-width: 500px; margin: auto; text-align: left; }
+        .user, .bot { padding: 10px; margin: 5px; border-radius: 10px; }
+        .user { background: #d1e7fd; text-align: right; }
+        .bot { background: #e0e0e0; }
+    </style>
+</head>
+<body>
+    <h2>Новый Локальный Chatbot</h2>
+    <div id="chat"></div>
+    <input id="input" type="text" placeholder="Введите сообщение..." />
+    <button id="sendButton">Отправить</button>
+</body>
+</html>
