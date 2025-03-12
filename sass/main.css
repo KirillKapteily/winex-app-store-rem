@@ -184,8 +184,6 @@ body {
 }
 
 .main-itemne {
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
   border-radius: 30px;
   background-color: rgba(0, 145, 255, 0.061);
   border: rgba(0, 145, 255, 0.061) 1px solid;
@@ -438,7 +436,7 @@ button.next {
 }
 
 .ad {
-  background-color: rgba(0, 145, 255, 0.061);
+  background-color: rgba(0, 145, 255, 0.023);
   border: rgba(0, 145, 255, 0.061) 1px solid;
   border-radius: 30px;
   margin-bottom: 30px;
@@ -520,8 +518,6 @@ button.next {
 
 .ad-itemne {
   border-color: antiquewhite;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
   border-radius: 30px;
   background-color: rgba(0, 145, 255, 0.061);
   border: rgba(0, 145, 255, 0.061) 1px solid;
@@ -1045,8 +1041,6 @@ ul {
   padding: 10px 10px;
   color: white;
   font-size: 30px;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
   background-color: rgb(70, 156, 255);
   transition: background-color cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
 }
@@ -1069,7 +1063,7 @@ ul {
 .open-chat-btn {
   padding: 10px 30px;
   font-size: 18px;
-  background-color: rgba(248, 248, 248, 0.5176470588);
+  background-color: #dbf0ff;
   color: rgb(0, 0, 0);
   border: none;
   cursor: pointer;
@@ -1081,7 +1075,7 @@ ul {
 }
 
 .open-chat-btn:hover {
-  background-color: rgba(255, 255, 255, 0.5176470588);
+  background-color: #e4f4ff;
 }
 
 .go {

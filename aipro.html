@@ -3,21 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Новый Локальный Chatbot</title>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@xenova/transformers"></script>
-    <script type="module" src="aialpha.js"></script>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
-        #chat { max-width: 500px; margin: auto; text-align: left; }
-        .user, .bot { padding: 10px; margin: 5px; border-radius: 10px; }
-        .user { background: #d1e7fd; text-align: right; }
-        .bot { background: #e0e0e0; }
-    </style>
+    <title>Чат-бот на DistilGPT-2</title>
+    <script src="https://cdn.jsdelivr.net/npm/@xenova/transformers@1.0.5/dist/transformers.min.js"></script>
 </head>
 <body>
-    <h2>Новый Локальный Chatbot</h2>
-    <div id="chat"></div>
-    <input id="input" type="text" placeholder="Введите сообщение..." />
-    <button id="sendButton">Отправить</button>
+    <h2>Чат-бот</h2>
+    <input type="text" id="userInput" placeholder="Введите сообщение..." />
+    <button onclick="generateResponse()">Отправить</button>
+    <p id="response"></p>
+    <p id="loading"></p>
+
+    <script>
+        let modelLoaded = false;
+
+        async function loadModel() {
+            try {
+                if (typeof transformers === 'undefined') {
+                    console.error("Библиотека transformers не была загружена.");
+                    document.getElementById("response").innerText = "Ошибка загрузки библиотеки transformers.";
+                    return;
+                }
+                document.getElementById("loading").innerText = "Загрузка модели...";
+                window.model = await transformers.pipeline('text-generation', 'Xenova/distilgpt2');
+                modelLoaded = true;
+                console.log("Модель загружена!");
+                document.getElementById("loading").innerText = "Модель загружена!";
+            } catch (error) {
+                console.error("Ошибка загрузки модели:", error);
+                document.getElementById("response").innerText = "Ошибка загрузки модели.";
+                document.getElementById("loading").innerText = "";
+                modelLoaded = false;
+            }
+        }
+
+        loadModel();
+
+        async function generateResponse() {
+            let inputText = document.getElementById("userInput").value;
+            if (!modelLoaded) {
+                document.getElementById("response").innerText = "Модель еще не загружена.";
+                return;
+            }
+            document.getElementById("loading").innerText = "Генерация ответа...";
+            try {
+                let result = await window.model(inputText, { max_length: 50, num_return_sequences: 3 });
+                let responseText = "";
+                result.forEach((item, index) => {
+                    responseText += `${index + 1}. ${item.generated_text}<br>`;
+                });
+                document.getElementById("response").innerHTML = responseText;
+            } catch (error) {
+                document.getElementById("response").innerText = "Ошибка при генерации ответа.";
+                console.error("Ошибка генерации ответа:", error);
+            }
+            document.getElementById("loading").innerText = "";
+        }
+    </script>
 </body>
 </html>
