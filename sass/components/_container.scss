@@ -9,13 +9,13 @@
         max-width: 320px;
     }
 
-    .download-title{
-        font-size: 20px!important;
-            }
+    .download-title {
+        font-size: 20px !important;
+    }
 
-.footer-text{
-    width: 318px!important;
-}
+    .footer-text {
+        width: 318px !important;
+    }
 
     .modal {
         left: 1px;
@@ -111,6 +111,128 @@
     }
 }
 
+@media (min-width:481px) and (max-width:767px) {
+    .container {
+        max-width: 481px;
+    }
+    .download-title {
+        font-size: 20px !important;
+    }
+
+.openbtn{
+    margin-left: 300px!important;
+}
+
+    .footer-text {
+        width: 318px !important;
+    }
+
+    .modal {
+        left: 1px;
+        width: 320px;
+    }
+
+    .download__safe {
+        margin-left: 0px !important;
+    }
+
+    .download__copyright {
+        margin-left: 0px !important;
+    }
+
+
+    .img-item {
+        width: 300px;
+    }
+
+    .download__p {
+        margin-left: 0px !important;
+    }
+
+    .backdropload {
+        min-width: 320px;
+    }
+
+    .safe {
+        margin: 0px;
+    }
+
+
+    .img-wrap {
+        width: 400px;
+        height: auto;
+    }
+
+    .download-button {
+        display: flex;
+        justify-content: center;
+    }
+
+.ad-container {
+max-width: 480px;
+}
+
+.list-title{
+    // margin-top: 100px!important;
+    max-width: 480px;
+}
+
+    .download-info {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .header-item {
+        display: none;
+    }
+
+    .menu-link {
+        display: none;
+    }
+
+    // .ad{
+    //     height: 600px!important;
+    // }
+
+    .slides {
+        gap: 0px;
+    }
+
+    .slider {
+        max-width: 480px;
+    }
+
+
+    .backdropload-2 {
+        max-width: 480px;
+        padding: 10px 10px !important;
+    }
+
+    .backdropload {
+        max-width: 480px;
+    }
+
+    .slide-img {
+        width: 312px;
+        height: 190px;
+    }
+
+    .ad-titlee-2 {
+        font-size: 20px !important;
+    }
+
+    .slide {
+        width: 320px !important;
+        height: 480px !important;
+        padding: 20px 5px !important;
+    }
+}
+
+
+
+
 @media (min-width:768px) and (max-width:1199px) {
     .container {
         max-width: 768px;
@@ -125,9 +247,9 @@
         // margin: 0 auto!important;
     }
 
-.download__p{
-    margin-left: 5px!important;
-}
+    .download__p {
+        margin-left: 5px !important;
+    }
 
     .slide-img {
         width: 292px;
@@ -154,22 +276,22 @@
         font-size: 16px;
     }
 
-// .safe{
-//     width: 40px;
-//     height: 40px;
-// }
+    // .safe{
+    //     width: 40px;
+    //     height: 40px;
+    // }
 
-// .copyright{
-//     width: 40px;
-//     height: 40px;  
-// }
+    // .copyright{
+    //     width: 40px;
+    //     height: 40px;  
+    // }
 
     .download__safe {
         margin-left: 1px !important;
     }
 
-    .download-title{
-font-size: 20px!important;
+    .download-title {
+        font-size: 20px !important;
     }
 
 }

@@ -89,6 +89,93 @@ body {
     padding: 20px 5px !important;
   }
 }
+@media (min-width: 481px) and (max-width: 767px) {
+  .container {
+    max-width: 481px;
+  }
+  .download-title {
+    font-size: 20px !important;
+  }
+  .openbtn {
+    margin-left: 300px !important;
+  }
+  .footer-text {
+    width: 318px !important;
+  }
+  .modal {
+    left: 1px;
+    width: 320px;
+  }
+  .download__safe {
+    margin-left: 0px !important;
+  }
+  .download__copyright {
+    margin-left: 0px !important;
+  }
+  .img-item {
+    width: 300px;
+  }
+  .download__p {
+    margin-left: 0px !important;
+  }
+  .backdropload {
+    min-width: 320px;
+  }
+  .safe {
+    margin: 0px;
+  }
+  .img-wrap {
+    width: 400px;
+    height: auto;
+  }
+  .download-button {
+    display: flex;
+    justify-content: center;
+  }
+  .ad-container {
+    max-width: 480px;
+  }
+  .list-title {
+    max-width: 480px;
+  }
+  .download-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+  }
+  .header-item {
+    display: none;
+  }
+  .menu-link {
+    display: none;
+  }
+  .slides {
+    gap: 0px;
+  }
+  .slider {
+    max-width: 480px;
+  }
+  .backdropload-2 {
+    max-width: 480px;
+    padding: 10px 10px !important;
+  }
+  .backdropload {
+    max-width: 480px;
+  }
+  .slide-img {
+    width: 312px;
+    height: 190px;
+  }
+  .ad-titlee-2 {
+    font-size: 20px !important;
+  }
+  .slide {
+    width: 320px !important;
+    height: 480px !important;
+    padding: 20px 5px !important;
+  }
+}
 @media (min-width: 768px) and (max-width: 1199px) {
   .container {
     max-width: 768px;
@@ -217,63 +304,6 @@ body {
   display: flex;
 }
 
-/*.slider {
-    z-index: 2;
-    position: relative;
-    width: 400px;
-    max-width: 1000px;
-    overflow: hidden;
-    left: 100px;
-    border-radius: 30px;
-}
-
-.slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slides img {
-    width: 100%;
-    min-width: 100%;
-}
-
-.next{
-    border-radius: 20px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0);
-    backdrop-filter: blur(10px);
-    text-shadow: rgb(0, 0, 0) 1px 0 10px;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.prev {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0);
-    backdrop-filter: blur(10px);
-    text-shadow: rgb(0, 0, 0) 1px 0 10px;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-border-radius: 20px;
-
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-  */
 .slider {
   position: relative;
   width: 1194px;
@@ -474,7 +504,7 @@ button.next {
   text-decoration: none;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 145, 255, 0.142);
+  background-color: rgb(179, 220, 254);
   color: rgb(0, 0, 0);
   padding: 10px;
   border: rgba(0, 145, 255, 0.394);
@@ -1099,7 +1129,6 @@ ul {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.128);
   overflow: hidden;
   display: flex;
   flex-direction: column;

@@ -11,12 +11,12 @@ function updateSlider() {
 }
 
 nextButton.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % totalSlides; // цикл на последний слайд
+    currentIndex = (currentIndex + 1) % totalSlides; 
     updateSlider();
 });
 
 prevButton.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides; // цикл на первый слайд
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides; 
     updateSlider();
 });
 
@@ -38,11 +38,11 @@ prevButton.addEventListener('click', () => {
 
   function openMenu() {
     document.getElementById("sidebar").style.left = "0";
-    document.getElementById("main").style.marginLeft = "250px"; // Смещение основного контента
+    document.getElementById("main").style.marginLeft = "250px"; 
 }
 
 function closeMenu() {
-    document.getElementById("sidebar").style.left = "-250px"; // Скрыть меню
-    document.getElementById("main").style.marginLeft = "0"; // Вернуть основной контент
+    document.getElementById("sidebar").style.left = "-250px"; 
+    document.getElementById("main").style.marginLeft = "0"; 
 }
 
