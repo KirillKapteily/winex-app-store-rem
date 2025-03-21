@@ -1,7 +1,7 @@
 .main-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
     justify-content: center;
     list-style: none;
 }
@@ -18,15 +18,14 @@
     font-size: 20px;
     font-weight: 700;
     margin: 20px 0;
-    background-color: rgba(80, 179, 255, 0.034);
     border: rgba(0, 145, 255, 0.061) 1px solid;
     border-radius: 20px;
     padding: 10px 10px;
 }
 
 .backdropload {
-    background-color: rgba(0, 145, 255, 0.061);
-    border: rgba(0, 145, 255, 0.061) 1px solid;
+    background-color: rgba(0, 145, 255, 0.034);
+    border: rgba(0, 145, 255, 0.038) 1px solid;
     border-radius: 30px;
     padding: 10px 0px;
 }
@@ -38,15 +37,15 @@
     justify-content: center;
     border-radius: 30px;
     transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s, margin cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s, box-shadow cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
-    background-color: rgba(0, 145, 255, 0.061);
+    background-color: rgba(0, 145, 255, 0.03);
     border: rgba(0, 145, 255, 0.061) 1px solid;
     box-shadow: 5px 10px 10px rgba(0, 145, 255, 0.136);
 
     &:hover {
-        background-color: rgba(0, 145, 255, 0.142);
+        background-color: rgba(0, 145, 255, 0.052);
         transform: scale(1.1);
-        margin: 0px 20px;
-        box-shadow: 10px 10px 10px rgba(0, 145, 255, 0.297);
+        margin: 0px 15px;
+        box-shadow: 10px 10px 10px rgba(0, 145, 255, 0.127);
     }
 
 }
@@ -66,8 +65,15 @@
     }
 }
 
+.imglist {
+    margin-left: 5px;
+}
+
 .img {
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .imgnewyear {
@@ -115,9 +121,9 @@
     font-size: 20px;
     padding: 20px;
     box-sizing: border-box;
-    background-color: rgba(0, 145, 255, 0.061);
+    background-color: rgba(0, 145, 255, 0.021);
     border: rgba(0, 145, 255, 0.061) 1px solid;
-    box-shadow: 5px 10px 10px rgba(0, 145, 255, 0.181);
+    box-shadow: 5px 10px 10px rgba(0, 145, 255, 0.072);
     border-radius: 30px;
     display: flex;
     align-items: center;
@@ -286,7 +292,7 @@ button.next {
 }
 
 .ad {
-    background-color: rgba(0, 145, 255, 0.023);
+    background-color: rgba(0, 145, 255, 0.011);
     border: rgba(0, 145, 255, 0.061) 1px solid;
     border-radius: 30px;
     margin-bottom: 30px;
@@ -322,18 +328,17 @@ button.next {
 }
 
 .ad-buttton {
-    text-shadow: white 1px 0 10px;
     display: flex;
     align-items: center;
     text-decoration: none;
     justify-content: center;
     align-items: center;
-    background-color: rgb(179, 220, 254);
+    background-color: rgb(198, 229, 255);
     // backdrop-filter: blur(10px);
     // text-shadow: rgb(255, 255, 255) 1px 0 10px;
     color: rgb(0, 0, 0);
     padding: 10px;
-    border: rgba(0, 145, 255, 0.394);
+    border: 1px rgb(255, 255, 255);
     cursor: pointer;
     border-radius: 20px;
     max-width: 150px;
@@ -416,4 +421,8 @@ button.next {
     width: 139px;
     display: flex;
     justify-content: center;
+}
+
+.search-result{
+    background-color: rgba(0, 145, 255, 0.061);
 }
