@@ -22,6 +22,10 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@xenova/transformers"></script>
+
+    
+
   <title>WinexAppStore</title>
 </head>
 
@@ -134,7 +138,19 @@
                       </svg>Download</a>
                   </div>
                 </li>
+                <li class="slide">
+                  <div>
+                    <img src="./images/appsscreens/chrome-1.webp" alt="Arrow" width="322" class="slide-img">
+                    <h2 class="slide-title">Browse smarter</h2>
+                    <h2 class="slide-title">Google Chrome</h2>
+                    <a href="./html/googlechromedownload.html" class="ad-buttton"><svg
+                        class="download__ico position__corrector">
+                        <use href="./images/symbol-defs-2.svg#icon-download" width="30" height="30"></use>
+                      </svg>Download</a>
+                  </div>
+                </li>
               </ul>
+              
               <button class="prev button-unifide">&#8678;</button>
               <button class="next button-unifide">&#8680;</button>
             </div>
@@ -319,10 +335,10 @@
               alt="zoom" width="119">
             <h3 class="card-title">Zoom</h3>
           </a></li>
-          <li class="main-item"><a href="./html/vlc.html" class="main-link"><img class="img" src="images/vlc.svg"
-            alt="vlc" width="119">
-          <h3 class="card-title">VLC</h3>
-        </a></li>
+        <li class="main-item"><a href="./html/vlc.html" class="main-link"><img class="img" src="images/vlc.svg"
+              alt="vlc" width="119">
+            <h3 class="card-title">VLC</h3>
+          </a></li>
       </ul>
       <h3 class="list-title">Screen Recorders</h3>
       <ul class="main-list backdropload">
@@ -357,7 +373,13 @@
             <h3 class="card-title">Gimp</h3>
           </a></li>
       </ul>
-      <a href="#"></a>
+      <h3 class="list-title">Video Editors</h3>
+      <ul class="main-list backdropload">
+        <li class="main-item"><a href="./html/clipclamp.html" class="main-link"><img class="img" src="images/clipclamp.avif"
+              alt="gimp" width="119">
+            <h3 class="card-title">clipclamp</h3>
+          </a></li>
+      </ul>
     </div>
 
 
@@ -404,7 +426,7 @@
               <li class="footer-item"><a href="https://github.com/KirillKapteily" class="footer-link">GitHub</a></li>
             </ul>
           </div>
-          <p class="version-p">Version 1.7</p>
+          <p class="version-p">Version 1.8</p>
         </div>
 
       </div>
@@ -414,6 +436,64 @@
 </body>
 <script src="ai.js"></script>
 <script src="script.js"></script>
-<script src="se.js"></script>
-
+<!-- <script src="summ.js"></script> -->
+<!-- <script type="module">
+  async function loadModel() {
+      const { pipeline } = await import('https://cdn.jsdelivr.net/npm/@xenova/transformers');
+      return await pipeline('text-generation', 'Xenova/gpt2');
+  }
+  
+  const modelPromise = loadModel();
+  
+  async function summarize(text) {
+      try {
+          const model = await modelPromise;
+          const result = await model(text, { max_length: 50, do_sample: true });
+          return result[0].generated_text;
+      } catch (error) {
+          console.error("Ошибка при генерации текста:", error);
+          return "Не удалось создать саммари.";
+      }
+  }
+  
+  document.addEventListener('mouseup', async (event) => {
+      const selectedText = window.getSelection().toString().trim();
+      let button = document.getElementById('summarize-btn');
+  
+      if (selectedText.length > 0) {
+          if (!button) {
+              button = document.createElement('button');
+              button.id = 'summarize-btn';
+              button.innerText = 'Сократить';
+              Object.assign(button.style, {
+                  position: 'absolute',
+                  padding: '8px 12px',
+                  backgroundColor: '#0078D7',
+                  color: 'white',
+                  border: 'none',
+                  borderRadius: '5px',
+                  cursor: 'pointer',
+                  boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)',
+                  zIndex: '1000'
+              });
+  
+              button.onclick = async () => {
+                  button.innerText = 'Ждём...';
+                  button.disabled = true;
+                  const summary = await summarize(selectedText);
+                  alert('Саммари: ' + summary);
+                  button.remove();
+              };
+  
+              document.body.appendChild(button);
+          }
+  
+          button.style.top = `${event.clientY + window.scrollY}px`;
+          button.style.left = `${event.clientX + window.scrollX}px`;
+      } else if (button) {
+          button.remove();
+      }
+  });
+  </script> -->
+  
 </html>

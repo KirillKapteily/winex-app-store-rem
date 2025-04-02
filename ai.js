@@ -131,6 +131,8 @@ class ChatBot {
         "avast": "Avast is a free antivirus, that protects you from virises for free",
         "Xcode": "Xcode offers all the tools you need to craft great apps for iPhone, iPad, Apple TV, Apple Watch, Apple Vision Pro, and Mac.",
         "pages": "Pages is a powerful word processor that lets you create stunning documents.",
+        "teams": "teams a workspace for real-time collaboration and communication, meetings, file and app sharing, and even the occasional emoji",
+        "vlc": "VLC is a free and open source cross-platform multimedia player and framework",
     };
 }
 
