@@ -104,10 +104,6 @@ scale: (1.1);
     padding-top: 14px;
   }
   
-  .modal__link {
-
-  }
-  
   .btn__send {
       color: rgb(255, 255, 255);
     font-family: Roboto;
@@ -242,7 +238,9 @@ color: gray;
     left: -250px; /* Скрыто изначально */
     background-color: #11111100;
     backdrop-filter: blur(10px);
+    border: #2121211b 1px solid;
     overflow-x: hidden;
+    border-radius: 50px;
     transition: 0.3s; /* Плавный переход */
     padding-top: 60px;
 }
@@ -282,27 +280,4 @@ color: gray;
 color: black;
 font-size: 20px;
 }
-  .menu-b{
 
-  }
-
-  .mod324al {
-    z-index: 1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 320px;
-    min-height: 400px;
-    padding: 15px;
-    border-radius: 4px;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    background: rgba(255, 255, 255, 0);
-    backdrop-filter: blur(7px);
-    transform: translate(-50%, -50%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    /* transition-property: transform;
-      transition-duration: 250ms;
-      transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1); */
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  
-  }
