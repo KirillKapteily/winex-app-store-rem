@@ -1,9 +1,14 @@
 @charset "UTF-8";
 body {
-  background: linear-gradient(to bottom, #cfecff, rgba(255, 255, 255, 0));
+  background-image: url(../../images/back.svg);
+  background-size: contain;
   margin: 3px 3px;
   transition: 0.3s;
   font-family: Roboto !important;
+}
+
+p {
+  text-shadow: white 1px 0 10px;
 }
 
 .container {
@@ -244,11 +249,14 @@ body {
   border: rgba(0, 145, 255, 0.061) 1px solid;
   border-radius: 20px;
   padding: 10px 10px;
+  text-shadow: white 1px 0 10px;
 }
 
 .backdropload {
   border: rgba(0, 145, 255, 0.059) 1px solid;
   border-radius: 30px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   padding: 10px 0px;
 }
 
@@ -259,7 +267,6 @@ body {
   transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s, margin cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s, box-shadow cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
   background-color: rgba(0, 145, 255, 0.03);
   border: rgba(0, 145, 255, 0.061) 1px solid;
-  box-shadow: 5px 10px 10px rgba(0, 145, 255, 0.136);
 }
 .main-item:hover {
   background-color: rgba(0, 145, 255, 0.052);
@@ -315,6 +322,7 @@ body {
   overflow: hidden;
   border-radius: 10px;
   align-items: center;
+  z-index: 2;
 }
 
 .slides {
@@ -338,6 +346,8 @@ body {
   border-radius: 30px;
   display: flex;
   align-items: center;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 
 .slide-img {
@@ -388,6 +398,7 @@ button.next {
   color: rgb(0, 0, 0);
   margin-top: 32px;
   margin-bottom: 32px;
+  text-shadow: white 1px 0 10px;
 }
 
 .slide-sopnsored {
@@ -506,7 +517,9 @@ button.next {
   text-decoration: none;
   justify-content: center;
   align-items: center;
-  background-color: rgb(198, 229, 255);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  text-shadow: rgba(255, 255, 255, 0.099) 1px 0 10px;
   color: rgb(0, 0, 0);
   padding: 10px;
   border: 1px rgb(255, 255, 255);
@@ -597,6 +610,7 @@ button.next {
   color: black;
   font-size: 20px;
   transition: color 1s cubic-bezier(0.19, 1, 0.22, 1);
+  text-shadow: white 1px 0 10px;
 }
 .logow:hover {
   color: #53baff;
@@ -606,8 +620,6 @@ header {
   display: flex;
   align-items: center;
   margin-bottom: 50px;
-  border: rgba(0, 145, 255, 0.061) 1px solid;
-  box-shadow: 5px 10px 10px rgba(0, 145, 255, 0.078);
   border-radius: 50px;
 }
 
@@ -693,12 +705,13 @@ header {
   text-align: center;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  background: rgb(33, 150, 243);
+  background: rgba(33, 149, 243, 0.483);
   width: 200px;
   height: 50px;
   border-style: none;
   transition-property: background-color, transform;
   transition-duration: 250ms;
+  text-shadow: white 1px 0 10px;
 }
 .btn__send .btn__send:hover {
   transform: cubic-bezier(0.4, 0, 0.2, 1);
@@ -863,16 +876,20 @@ footer {
 
 .footer-item {
   color: black;
+  text-shadow: white 1px 0 10px;
 }
 
 .mailto {
   color: black;
   text-decoration: none;
+  text-shadow: white 1px 0 10px;
 }
 
 .footer-link {
   color: black;
   text-decoration: none;
+  text-shadow: white 1px 0 10px;
+  text-shadow: white 1px 0 10px;
 }
 
 .footer-wrapper {
@@ -884,6 +901,8 @@ footer {
   align-items: center;
   margin-bottom: 30px;
   flex-wrap: wrap;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   border: rgba(0, 145, 255, 0.061) 1px solid;
   border-radius: 30px;
   padding: 10px 10px;
@@ -1008,6 +1027,7 @@ ul {
   border: rgba(0, 145, 255, 0.061) 1px solid;
   border-radius: 30px;
   padding: 10px 10px;
+  text-shadow: white 1px 0 10px;
 }
 
 .download-description {
@@ -1062,11 +1082,13 @@ ul {
   padding: 10px 10px;
   color: white;
   font-size: 30px;
-  background-color: rgb(70, 156, 255);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background-color: rgba(70, 156, 255, 0.433);
   transition: background-color cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
 }
 .download-button:hover {
-  background-color: rgb(0, 119, 255);
+  background-color: rgba(0, 119, 255, 0.574);
 }
 
 .download__code {
@@ -1084,7 +1106,8 @@ ul {
 .open-chat-btn {
   padding: 10px 30px;
   font-size: 18px;
-  background-color: #dbf0ff;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   color: rgb(0, 0, 0);
   border: none;
   cursor: pointer;
@@ -1093,10 +1116,11 @@ ul {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  background-color: rgba(211, 47, 47, 0);
 }
 
 .open-chat-btn:hover {
-  background-color: #e4f4ff;
+  background-color: rgba(221, 221, 221, 0.1803921569);
 }
 
 .go {

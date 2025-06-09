@@ -21,12 +21,14 @@
     border: rgba(0, 145, 255, 0.061) 1px solid;
     border-radius: 20px;
     padding: 10px 10px;
+    text-shadow: white 1px 0 10px;
 }
 
 .backdropload {
     // background-color: rgba(0, 145, 255, 0.034);
     border: rgba(0, 145, 255, 0.059) 1px solid;
     border-radius: 30px;
+        backdrop-filter: blur(5px);
     padding: 10px 0px;
 }
 
@@ -39,7 +41,7 @@
     transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s, margin cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s, box-shadow cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
     background-color: rgba(0, 145, 255, 0.03);
     border: rgba(0, 145, 255, 0.061) 1px solid;
-    box-shadow: 5px 10px 10px rgba(0, 145, 255, 0.136);
+
 
     &:hover {
         background-color: rgba(0, 145, 255, 0.052);
@@ -101,6 +103,7 @@
     overflow: hidden;
     border-radius: 10px;
     align-items: center;
+        z-index: 2;
 }
 
 .slides {
@@ -125,7 +128,7 @@
     border-radius: 30px;
     display: flex;
     align-items: center;
-
+        backdrop-filter: blur(10px);
 }
 
 .slide-img {
@@ -178,6 +181,7 @@ button.next {
     color: rgb(0, 0, 0);
     margin-top: 32px;
     margin-bottom: 32px;
+    text-shadow: white 1px 0 10px;
 }
 
 .slide-sopnsored {
@@ -331,9 +335,9 @@ button.next {
     text-decoration: none;
     justify-content: center;
     align-items: center;
-    background-color: rgb(198, 229, 255);
-    // backdrop-filter: blur(10px);
-    // text-shadow: rgb(255, 255, 255) 1px 0 10px;
+
+    backdrop-filter: blur(10px);
+    text-shadow: rgba(255, 255, 255, 0.099) 1px 0 10px;
     color: rgb(0, 0, 0);
     padding: 10px;
     border: 1px rgb(255, 255, 255);

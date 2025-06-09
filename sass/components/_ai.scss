@@ -10,7 +10,7 @@ justify-content: center;
 .open-chat-btn {
     padding: 10px 30px;
     font-size: 18px;
-    background-color: #dbf0ff;
+    backdrop-filter: blur(10px);
     color: rgb(0, 0, 0);
     border: none;
     cursor: pointer;
@@ -19,10 +19,11 @@ justify-content: center;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    background-color: #d32f2f00;
 }
 
 .open-chat-btn:hover {
-    background-color: #e4f4ff;
+background-color: #dddddd2e;
 }
 
 .go{
