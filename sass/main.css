@@ -1,10 +1,10 @@
 @charset "UTF-8";
 body {
-  background-image: url("../../images/back.svg");
+  background-image: url("/images/back.svg");
   background-size: contain;
   margin: 3px 3px;
   transition: 0.3s;
-  font-family: Roboto !important;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 p {
