@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  background-image: url("/images/back.svg");
+  background-image: url("https://kirillkapteily.github.io/winex-app-store-rem/images/back.svg");
   background-size: contain;
   margin: 3px 3px;
   transition: 0.3s;
