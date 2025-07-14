@@ -4,8 +4,10 @@ $light-text: black;
 $dark-text: white;
 
 body {
-background-image: url("https://kirillkapteily.github.io/winex-app-store-rem/images/back.svg");
-background-size: contain;
+   
+// background-image: url("https://kirillkapteily.github.io/winex-app-store-rem/images/back.svg");
+background-image: url("../../images/vecteezy_mounti.svg");
+background-size: cover;
    margin: 3px 3px;
    transition: 0.3s;
    font-family: 'Roboto', Arial, sans-serif;

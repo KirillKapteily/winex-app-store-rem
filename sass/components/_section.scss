@@ -15,36 +15,25 @@
     justify-content: center;
     align-items: center;
     color: black;
-    font-size: 20px;
     font-weight: 700;
     margin: 20px 0;
-    border: rgba(0, 145, 255, 0.061) 1px solid;
-    border-radius: 20px;
     padding: 10px 10px;
     text-shadow: white 1px 0 10px;
 }
 
-.backdropload {
-    // background-color: rgba(0, 145, 255, 0.034);
-    border: rgba(0, 145, 255, 0.059) 1px solid;
-    border-radius: 30px;
-        backdrop-filter: blur(5px);
-    padding: 10px 0px;
-}
 
 
 .main-item {
-    // backdrop-filter: blur(5px);
     display: flex;
     justify-content: center;
     border-radius: 30px;
+            backdrop-filter: blur(5px);
     transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s, margin cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s, box-shadow cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
     background-color: rgba(0, 145, 255, 0.03);
     border: rgba(0, 145, 255, 0.061) 1px solid;
 
 
     &:hover {
-        background-color: rgba(0, 145, 255, 0.052);
         transform: scale(1.1);
         margin: 0px 15px;
         box-shadow: 10px 10px 10px rgba(0, 145, 255, 0.127);
@@ -103,7 +92,7 @@
     overflow: hidden;
     border-radius: 10px;
     align-items: center;
-        z-index: 2;
+        z-index: 200;
 }
 
 .slides {
@@ -122,13 +111,11 @@
     font-size: 20px;
     padding: 20px;
     box-sizing: border-box;
-    background-color: rgba(0, 145, 255, 0.021);
     border: rgba(0, 145, 255, 0.061) 1px solid;
-    box-shadow: 5px 10px 10px rgba(0, 145, 255, 0.072);
     border-radius: 30px;
     display: flex;
     align-items: center;
-        backdrop-filter: blur(10px);
+        
 }
 
 .slide-img {
@@ -335,12 +322,10 @@ button.next {
     text-decoration: none;
     justify-content: center;
     align-items: center;
-
-    backdrop-filter: blur(10px);
-    text-shadow: rgba(255, 255, 255, 0.099) 1px 0 10px;
+    // backdrop-filter: blur(10px);
+    text-shadow: rgb(255, 255, 255) 1px 0 10px;
     color: rgb(0, 0, 0);
     padding: 10px;
-    border: 1px rgb(255, 255, 255);
     cursor: pointer;
     border-radius: 20px;
     max-width: 150px;
