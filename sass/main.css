@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  background-image: url("https://kirillkapteily.github.io/winex-app-store-rem/images/vecteezy_mounti.svg");
+  background-image: url("../../images/backk.svg");
   background-size: cover;
   margin: 3px 3px;
   transition: 0.3s;
@@ -258,11 +258,11 @@ p {
   transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s, margin cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s, box-shadow cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
   background-color: rgba(0, 145, 255, 0.03);
   border: rgba(0, 145, 255, 0.061) 1px solid;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), inset 0 2px 5px rgba(0, 145, 255, 0.061);
 }
 .main-item:hover {
   transform: scale(1.1);
   margin: 0px 15px;
-  box-shadow: 10px 10px 10px rgba(0, 145, 255, 0.127);
 }
 
 .main-itemne {
@@ -313,6 +313,8 @@ p {
   border-radius: 10px;
   align-items: center;
   z-index: 200;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 
 .slides {
@@ -331,6 +333,7 @@ p {
   padding: 20px;
   box-sizing: border-box;
   border: rgba(0, 145, 255, 0.061) 1px solid;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), inset 0 2px 5px rgba(0, 145, 255, 0.061);
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -604,6 +607,8 @@ header {
   align-items: center;
   margin-bottom: 50px;
   border-radius: 50px;
+  border: rgba(0, 145, 255, 0.061) 1px solid;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), inset 0 2px 5px rgba(0, 145, 255, 0.061);
 }
 
 .menu {
@@ -803,7 +808,8 @@ body {
   background-color: rgba(17, 17, 17, 0);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  border: rgba(33, 33, 33, 0.1058823529) 1px solid;
+  border: rgba(0, 145, 255, 0.061) 1px solid;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), inset 0 2px 5px rgba(0, 145, 255, 0.061);
   overflow-x: hidden;
   border-radius: 50px;
   transition: 0.3s; /* Плавный переход */
@@ -824,7 +830,7 @@ body {
 }
 
 .sidebar a:hover {
-  background-color: rgba(0, 145, 255, 0.145);
+  background-color: rgba(255, 255, 255, 0.307);
 }
 
 .openbtn {
@@ -852,7 +858,6 @@ body {
 }
 
 footer {
-  border-radius: 50px;
   padding: 10px 10px;
   display: flex;
   margin-top: 15px;
@@ -1064,6 +1069,8 @@ ul {
           backdrop-filter: blur(5px);
   background-color: rgba(70, 156, 255, 0.681);
   transition: background-color cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+  border: rgba(0, 145, 255, 0.061) 1px solid;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), inset 0 2px 5px rgba(0, 145, 255, 0.061);
 }
 .download-button:hover {
   background-color: rgb(0, 119, 255);
@@ -1076,6 +1083,24 @@ ul {
 
 h3 {
   text-shadow: white 1px 0 10px;
+}
+
+.moved {
+  transition: transform 0.5s;
+  animation: rotater-img2 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+}
+@keyframes rotater-img2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: scale(1.1);
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: scale(1);
+    transform: rotate(0deg);
+  }
 }
 
 .center-button {
@@ -1128,10 +1153,12 @@ h3 {
   display: flex;
   flex-direction: column;
   animation: open 0.5s ease-in-out;
+  border: rgba(0, 145, 255, 0.061) 1px solid;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), inset 0 2px 5px rgba(0, 145, 255, 0.061);
 }
 @keyframes open {
   from {
-    transform: scale(0.5);
+    transform: scale(0.1);
     opacity: 0;
   }
   to {
@@ -1178,12 +1205,12 @@ h3 {
 
 .message.user {
   text-align: right;
-  color: #555;
+  color: #7b7b7b;
 }
 
 .chat-input {
   display: flex;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid rgba(221, 221, 221, 0.0745098039);
 }
 
 .chat-input input {
@@ -1218,6 +1245,8 @@ h3 {
   height: 30px;
   font-size: 18px;
   cursor: pointer;
+  border: rgba(0, 145, 255, 0.061) 1px solid;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), inset 0 2px 5px rgba(0, 145, 255, 0.061);
 }
 
 .close-btn:hover {

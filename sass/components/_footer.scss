@@ -1,34 +1,33 @@
-.footer-list{
+.footer-list {
     list-style: none;
     min-width: 320px;
 }
 
-footer{
-    border-radius: 50px;
+footer {
     padding: 10px 10px;
     display: flex;
     margin-top: 15px;
 
 }
 
-.footer-item{
+.footer-item {
     color: black;
-     text-shadow: white 1px 0 10px;
+    text-shadow: white 1px 0 10px;
 }
 
-.mailto{
-    color: black;
-    text-decoration: none;
-     text-shadow: white 1px 0 10px;
-}
-
-.footer-link{
+.mailto {
     color: black;
     text-decoration: none;
-     text-shadow: white 1px 0 10px;
-      text-shadow: white 1px 0 10px;
+    text-shadow: white 1px 0 10px;
 }
 
-.footer-wrapper{
+.footer-link {
+    color: black;
+    text-decoration: none;
+    text-shadow: white 1px 0 10px;
+    text-shadow: white 1px 0 10px;
+}
+
+.footer-wrapper {
     display: flex;
 }

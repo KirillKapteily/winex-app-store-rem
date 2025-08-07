@@ -22,6 +22,9 @@ header{
     margin-bottom: 50px;
     // background-color: rgba(0, 145, 255, 0.061);
     border-radius: 50px;
+         border: rgba(0, 145, 255, 0.061) 1px solid;
+
+ box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), inset 0 2px 5px rgba(0, 145, 255, 0.061);
 }
 
 .menu {
@@ -239,7 +242,9 @@ color: gray;
     left: -250px; /* Скрыто изначально */
     background-color: #11111100;
     backdrop-filter: blur(10px);
-    border: #2121211b 1px solid;
+     border: rgba(0, 145, 255, 0.061) 1px solid;
+ box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), inset 0 2px 5px rgba(0, 145, 255, 0.061);
+  
     overflow-x: hidden;
     border-radius: 50px;
     transition: 0.3s; /* Плавный переход */
@@ -260,7 +265,7 @@ color: gray;
 }
 
 .sidebar a:hover {
-    background-color: rgba(0, 145, 255, 0.145);
+    background-color: rgba(255, 255, 255, 0.307);
 }
 
 .openbtn {
