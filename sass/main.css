@@ -604,8 +604,8 @@ button.next {
 }
 
 .searchModal {
-  width: 320px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   position: absolute;
   top: 100px;
   left: 50%;
@@ -613,9 +613,9 @@ button.next {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   border-radius: 30px;
-  background-color: rgba(0, 145, 255, 0.03);
-  border: rgba(0, 145, 255, 0.061) 1px solid;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), inset 0 2px 5px rgba(0, 145, 255, 0.061);
+  background-color: rgba(255, 255, 255, 0.95);
+  border: rgba(200, 200, 200, 0.3) 1px solid;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), inset 0 2px 5px rgba(255, 255, 255, 0.1);
 }
 
 .header-list {

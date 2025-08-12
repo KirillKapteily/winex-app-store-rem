@@ -58,8 +58,8 @@ let searching = () => {
 
     if (!text) return;
 
-    // Find all names that include the search text (case-insensitive)
-    const matches = names.filter(name => name.toLowerCase().includes(text));
+    // Find all names that include the search text (case-insensitive) and limit to 4 results
+    const matches = names.filter(name => name.toLowerCase().includes(text)).slice(0, 4);
 
     if (matches.length === 0) return;
 
