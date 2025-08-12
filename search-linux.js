@@ -1,7 +1,7 @@
 let progs = {
     Firefox: "./html/firefoxdownloadpagelinux.html",
     "Google Chrome": "./html/googlechromedownloadlinux.html",
-    "Microsift Edge": "./html/msedgedownloadlinux.html",
+    "Microsoft Edge": "./html/msedgedownloadlinux.html",
     Opera: "./html/operadowlinux.html",
     Telegram: "./html/telegramdownloadlinux.html",
     Discord: "./html/discorddownloadlinux.html",
