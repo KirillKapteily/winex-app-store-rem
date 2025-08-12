@@ -88,6 +88,10 @@ p {
   .ad-titlee-2 {
     font-size: 20px !important;
   }
+  .searchModal {
+    left: 1% !important;
+    top: 150px !important;
+  }
   .slide {
     width: 320px !important;
     height: 480px !important;
