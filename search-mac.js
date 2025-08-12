@@ -1,7 +1,7 @@
 let progs = {
     Firefox: "./html/firefoxdownloadpagemacos.html",
     "Google Chrome": "./html/googlechromedownloadmacos.html",
-    "Microsift Edge": "./html/msedgedownloadmacos.html",
+    "Microsoft Edge": "./html/msedgedownloadmacos.html",
     Opera: "./html/operadownmacos.html",
     Telegram: "./html/telegramdownloadmacos.html",
     Discord: "./html/discorddownloadmacos.html",
