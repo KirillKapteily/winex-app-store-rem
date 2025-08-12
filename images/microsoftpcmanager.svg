@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 296.98 299.83">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-2);
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-3);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="99.69" y1="102" x2="205.93" y2="208.24" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#41b480"/>
+      <stop offset="1" stop-color="#1c8094"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="12.68" y1="15.03" x2="155.03" y2="157.38" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9ae45e"/>
+      <stop offset="1" stop-color="#51c0a8"/>
+    </linearGradient>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="7"/>
+      <feGaussianBlur result="blur" stdDeviation="5"/>
+      <feFlood flood-color="#000" flood-opacity=".3"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-3" x1="184.38" y1="187.23" x2="277.66" y2="280.51" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0292f1"/>
+      <stop offset="1" stop-color="#1760c2"/>
+    </linearGradient>
+  </defs>
+  <path class="cls-2" d="m296.98,23.27v68.19c0,34.31-27.81,62.12-62.12,62.12h-15.15c-7.13.92-26.71,4.4-43.6,20.64-23.8,22.88-23.58,53.11-23.46,58.27,0,36.13-29.28,65.41-65.41,65.41H19.57c-6.04,0-10.93-4.89-10.93-10.93v-68.19c0-34.3,27.81-62.11,62.11-62.11h34.19c.57,0,1.14.01,1.71.04,15.36-15.77,30.73-31.54,46.09-47.31.15.47.31.97.5,1.49-.18-1.65-.27-3.33-.27-5.03v-28.11c0-36.12,29.28-65.41,65.41-65.41h67.67c6.03,0,10.93,4.89,10.93,10.93Z"/>
+  <path class="cls-1" d="m26.51,8.6h63.32c39.17,0,70.98,31.8,70.98,70.98v65.53c0,8.64-7.02,15.66-15.66,15.66h-73.7c-34.66,0-62.81-28.14-62.81-62.81V26.47c0-9.86,8.01-17.87,17.87-17.87Z"/>
+  <circle class="cls-3" cx="231.02" cy="233.87" r="65.96"/>
+</svg>

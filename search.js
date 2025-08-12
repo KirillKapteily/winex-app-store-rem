@@ -2,7 +2,7 @@ let progs = {
     Firefox: "./html/firefoxdownloadpage.html",
     "Google Chrome": "./html/googlechromedownload.html",
     Supermium: "./html/supermiumdownload.html",
-    "Microsift Edge": "./html/msedgedownload.html",
+    "Microsoft Edge": "./html/msedgedownload.html",
     Opera: "./html/operadown.html",
     Telegram: "./html/telegramdownload.html",
     Discord: "./html/discorddownload.html",
@@ -42,7 +42,7 @@ let progs = {
     Pixso: "./html/pixsodow.html",
     Canva: "./html/canva.html",
     Gimp: "./html/gimp.html",
-    Clipclamp: "./html/clipclamp.html"
+    clipchamp: "./html/clipclamp.html"
 };
 
 let searchBar = document.querySelector(".searchBar");
@@ -51,41 +51,32 @@ const array = Array.from(nameAr);
 const names = array.map(element => element.textContent.trim());
 
 let searching = () => {
-    let text = searchBar.value.trim();
+    let text = searchBar.value.trim().toLowerCase();
     const existingModal = document.querySelector(".searchModal");
     if (existingModal) existingModal.remove();
 
-    if (names.includes(text) && progs[text]) {
-        const href = progs[text];
+    if (text === "") return; 
+
+    const filtered = Object.keys(progs).filter(name =>
+        name.toLowerCase().includes(text)
+    );
+
+    if (filtered.length > 0) {
         const div = document.createElement("div");
         div.classList.add("searchModal");
-
-        div.innerHTML = `<ul class="main-list">
-            <li class="main-item">
-                <a href="${href}" class="main-link">
-                    <img class="img" src="images/${text.toLowerCase().replace(/\s/g, '')}.svg" alt="${text}" width="119">
-                    <h3 class="card-title">${text}</h3>
-                </a>
-            </li>
-        </ul>`;
-
-        document.body.appendChild(div);
-    } else if (names.includes(text) || progs[text]) {
-        const href = progs[text];
-        const div = document.createElement("div");
-        div.classList.add("searchModal");
-
-        div.innerHTML = `<ul class="main-list">
-            <li class="main-item">
-                <a href="${href}" class="main-link">
-                    <img class="img" src="images/${text.toLowerCase().replace(/\s/g, '')}.svg" alt="${text}" width="119">
-                    <h3 class="card-title">${text}</h3>
-                </a>
-            </li>
+        div.innerHTML = `<h3 class="list-title">Search Results:</h3><ul class="main-list">
+            ${filtered.map(name => `
+                <li class="main-item">
+                    <a href="${progs[name]}" class="main-link">
+                        <img class="img" src="images/${name.toLowerCase().replace(/\s/g, '')}.svg" alt="${name}" width="98">
+                        <h3 class="card-title">${name}</h3>
+                    </a>
+                </li>
+            `).join("")}
         </ul>`;
 
         document.body.appendChild(div);
     }
-}
+};
 
 searchBar.addEventListener("input", searching);
