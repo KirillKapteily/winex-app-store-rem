@@ -22,7 +22,7 @@ let progs = {
     OneDrive: "./html/onedrivedow.html",
     Steam: "./html/steamdow.html",
     EpicGames: "./html/epicgamesdow.html",
-    VisualStudioCode: "./html/vscodedownload.html",
+    "Visual Studio Code": "./html/vscodedownload.html",
     GitHubDesktop: "./html/githubdownload.html",
     GitBash: "./html/gitbash.html",
     ArduinoIDE: "./html/arduino.html",
