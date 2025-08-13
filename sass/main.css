@@ -260,7 +260,7 @@ p {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s, margin cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s, box-shadow cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
-  background-color: rgba(0, 145, 255, 0.03);
+  background: linear-gradient(to top, rgba(207, 236, 255, 0.168627451), rgba(255, 255, 255, 0));
   border: rgba(0, 145, 255, 0.061) 1px solid;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), inset 0 2px 5px rgba(0, 145, 255, 0.061);
 }
@@ -613,7 +613,7 @@ button.next {
   -webkit-backdrop-filter: blur(30px);
           backdrop-filter: blur(30px);
   border-radius: 30px;
-  background-color: rgba(255, 255, 255, 0.507);
+  background-color: rgba(255, 255, 255, 0.302);
   border: rgba(0, 145, 255, 0.061) 1px solid;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), inset 0 2px 5px rgba(0, 145, 255, 0.061);
 }
@@ -894,6 +894,7 @@ footer {
   padding: 10px 10px;
   display: flex;
   margin-top: 15px;
+  background: linear-gradient(to top, rgba(207, 236, 255, 0.2196078431), rgba(255, 255, 255, 0));
 }
 
 .footer-item {
@@ -919,6 +920,8 @@ footer {
 }
 
 .download-info {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
   margin-bottom: 30px;
@@ -1207,7 +1210,7 @@ h3 {
 }
 
 .chat-header {
-  background: rgba(255, 255, 255, 0.0392156863);
+  background-color: rgba(221, 221, 221, 0.2745098039);
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
   color: rgb(0, 0, 0);
@@ -1230,26 +1233,34 @@ h3 {
 }
 
 .message.bot {
-  background-color: rgba(221, 221, 221, 0.2745098039);
+  background-color: rgba(221, 221, 221, 0.4078431373);
   -webkit-backdrop-filter: 30px;
           backdrop-filter: 30px;
   border-radius: 10px;
+  color: #000000;
 }
 
 .message.user {
   text-align: right;
-  color: #7b7b7b;
+  color: #000000;
+  border-radius: 10px;
+  background-color: rgba(221, 221, 221, 0.2745098039);
 }
 
 .chat-input {
   display: flex;
+  opacity: 1;
+  color: #000000;
   border-top: 1px solid rgba(221, 221, 221, 0.0745098039);
 }
 
 .chat-input input {
   flex: 1;
+  opacity: 1;
   padding: 10px;
   border: none;
+  background-color: rgba(221, 221, 221, 0.2745098039);
+  color: #000000;
   border-right: 1px solid rgba(221, 221, 221, 0.2196078431);
 }
 

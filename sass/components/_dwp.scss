@@ -1,10 +1,12 @@
 .download-info {
+    backdrop-filter: blur(10px);
     display: flex;
     align-items: center;
     margin-bottom: 30px;
     flex-wrap: wrap;
     border-radius: 30px;
     padding: 10px 10px;
+
 }
 
 .download-title {
