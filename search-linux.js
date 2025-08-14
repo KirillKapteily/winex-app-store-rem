@@ -53,4 +53,5 @@ let searching = () => {
     }
 };
 
-searchBar.addEventListener("input", searching);
+const debounceSearch = _.debounce(searching, 300);
+searchBar.addEventListener("input", debounceSearch);
