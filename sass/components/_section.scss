@@ -95,7 +95,6 @@
     border-radius: 10px;
     align-items: center;
     z-index: 200;
-    backdrop-filter: blur(10px);
 }
 
 .slides {
@@ -148,8 +147,8 @@ button.next {
     top: 50%;
     transform: translateY(-50%);
     background: #33333300;
-    color: white;
-    border: white 1px solid;
+    color: rgb(0, 0, 0);
+    border: rgb(0, 0, 0) 1px solid;
     border-radius: 50px;
     padding: 50px 10px;
     padding: 10px;
@@ -157,7 +156,7 @@ button.next {
     transition: background-color 0.1s ease-in-out;
 
     &:hover {
-        background-color: #ffffff6f;
+        background-color: #0000006f;
     }
 }
 

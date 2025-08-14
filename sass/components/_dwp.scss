@@ -154,6 +154,7 @@ ul {
     border: rgba(0, 145, 255, 0.061) 1px solid;
     border-radius: 30px;
     padding: 10px 10px;
+    backdrop-filter: blur(30px);
 }
 
 .none {
