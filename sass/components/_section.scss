@@ -29,7 +29,6 @@
     border-radius: 30px;
     backdrop-filter: blur(5px);
     transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s, margin cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s, box-shadow cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
-    // background-color: rgba(0, 145, 255, 0.03);
     background: linear-gradient(to top, #cfecff2b, #ffffff00);
     border: rgba(0, 145, 255, 0.061) 1px solid;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), inset 0 2px 5px rgba(0, 145, 255, 0.061);
@@ -157,6 +156,7 @@ button.next {
 
     &:hover {
         background-color: #0000006f;
+        color: white;
     }
 }
 
@@ -193,7 +193,6 @@ button.next {
     line-height: 118%;
     letter-spacing: 3%;
     color: rgb(246, 245, 239);
-    //    margin-left: 167px;
     margin-bottom: 0px;
 }
 
@@ -222,21 +221,6 @@ button.next {
     letter-spacing: 3%;
 }
 
-// .dm-sans {
-//     fon1t-family: "DM Sans", sans-serif;
-//     font-optical-sizing: auto;
-//     font-weight: 500;
-//     font-style: normal;
-// }
-
-// @media (min-width:768px) and (max-width:1219px) {
-
-//  .slider {
-//      max-width: 784px;
-//  }
-
-// }
-
 @media (min-width:320px) and (max-width:480px) {
 
 
@@ -257,12 +241,6 @@ button.next {
     align-items: center;
     font-size: 17px;
 }
-
-
-
-// .slider-sect{
-
-// }
 
 .ad-img {
     width: 320px;
@@ -286,7 +264,6 @@ button.next {
 }
 
 .ad {
-    // background-color: rgba(0, 145, 255, 0.011);
     border: rgba(0, 145, 255, 0.061) 1px solid;
     border-radius: 30px;
     margin-bottom: 30px;
@@ -327,7 +304,6 @@ button.next {
     text-decoration: none;
     justify-content: center;
     align-items: center;
-    // backdrop-filter: blur(10px);
     text-shadow: rgb(255, 255, 255) 1px 0 10px;
     color: rgb(0, 0, 0);
     padding: 10px;
@@ -357,7 +333,6 @@ button.next {
 
 .ad-item {
     border-color: antiquewhite;
-    // backdrop-filter: blur(5px);
     border-radius: 30px;
     transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s, margin cubic-bezier(0.075, 0.82, 0.165, 1) 1s, box-shadow cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
     background-color: rgba(0, 145, 255, 0.061);
@@ -369,7 +344,6 @@ button.next {
         background-color: rgba(0, 145, 255, 0.142);
         transform: scale(1.1);
         margin: 1px 20px;
-        // box-shadow: 10px 10px 10px rgba(0, 145, 255, 0.443);
         box-shadow: 10px 10px 10px rgba(0, 145, 255, 0.443);
         border: rgba(0, 213, 255, 0.11) 1px solid;
     }
@@ -378,7 +352,6 @@ button.next {
 
 .ad-itemne {
     border-color: antiquewhite;
-    // backdrop-filter: blur(5px);
     border-radius: 30px;
 
     background-color: rgba(0, 145, 255, 0.061);
