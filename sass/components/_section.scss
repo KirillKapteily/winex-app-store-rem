@@ -94,7 +94,7 @@
     border-radius: 10px;
     align-items: center;
     z-index: 200;
-    
+
 }
 
 .slides {
@@ -146,9 +146,9 @@ button.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: #33333300;
+    background: #ffffff71;
     color: rgb(0, 0, 0);
-    border: rgb(0, 0, 0) 1px solid;
+border:  #ffffff00;
     border-radius: 50px;
     padding: 50px 10px;
     padding: 10px;
@@ -157,7 +157,9 @@ button.next {
 
     &:hover {
         background-color: #0000006f;
-        color: white;
+        border: white;
+        fill: white;
+
     }
 }
 
@@ -395,7 +397,7 @@ button.next {
 
 .searchBar {
     display: flex;
-    color: black!important;
+    color: black !important;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -420,4 +422,9 @@ button.next {
     border: rgba(0, 145, 255, 0.061) 1px solid;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), inset 0 2px 5px rgba(0, 145, 255, 0.061);
 
+}
+
+.unifBtn {
+    width: 20px;
+    height: 20px;
 }

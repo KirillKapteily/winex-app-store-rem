@@ -360,9 +360,9 @@ button.next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(51, 51, 51, 0);
+  background: rgba(255, 255, 255, 0.4431372549);
   color: rgb(0, 0, 0);
-  border: rgb(0, 0, 0) 1px solid;
+  border: rgba(255, 255, 255, 0);
   border-radius: 50px;
   padding: 50px 10px;
   padding: 10px;
@@ -371,7 +371,8 @@ button.next {
 }
 .button-unifide:hover {
   background-color: rgba(0, 0, 0, 0.4352941176);
-  color: white;
+  border: white;
+  fill: white;
 }
 
 .slide-img {
@@ -611,6 +612,11 @@ button.next {
   background-color: rgba(255, 255, 255, 0.281);
   border: rgba(0, 145, 255, 0.061) 1px solid;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), inset 0 2px 5px rgba(0, 145, 255, 0.061);
+}
+
+.unifBtn {
+  width: 20px;
+  height: 20px;
 }
 
 .header-list {
