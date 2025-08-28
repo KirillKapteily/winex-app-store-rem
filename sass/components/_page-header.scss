@@ -234,11 +234,11 @@ color: gray;
 
 .sidebar {
     height: 100%;
-    width: 250px; /* Ширина бокового меню */
+    width: 250px; 
     position: fixed;
     z-index: 17646765776756;
     top: 0;
-    left: -250px; /* Скрыто изначально */
+    left: -250px; 
     background-color: #11111100;
     backdrop-filter: blur(10px);
      border: rgba(0, 145, 255, 0.061) 1px solid;
@@ -246,7 +246,7 @@ color: gray;
   
     overflow-x: hidden;
     border-radius: 50px;
-    transition: 0.3s; /* Плавный переход */
+    transition: 0.3s;
     padding-top: 60px;
 }
 

@@ -27,7 +27,7 @@
     display: flex;
     justify-content: center;
     border-radius: 30px;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(8px);
     transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s, margin cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s, box-shadow cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
     background: linear-gradient(to top, #cfecff2b, #ffffff00);
     border: rgba(0, 145, 255, 0.061) 1px solid;
@@ -40,6 +40,25 @@
 
     }
 
+}
+
+.main-item-s {
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    backdrop-filter: blur(8px);
+    transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s, margin cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s, box-shadow cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
+    background: linear-gradient(to top, #cfecff44, #ffffff00);
+    border: rgba(0, 145, 255, 0.061) 1px solid;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), inset 0 2px 5px rgba(0, 145, 255, 0.061);
+    padding: 10px 10px 10px 10px;
+
+
+    &:hover {
+        transform: scale(1.1);
+        margin: 0px 5px;
+
+    }
 }
 
 .main-itemne {
@@ -94,7 +113,7 @@
     border-radius: 10px;
     align-items: center;
     z-index: 200;
-
+    backdrop-filter: blur(30px);
 }
 
 .slides {
@@ -148,10 +167,11 @@ button.next {
     transform: translateY(-50%);
     background: #ffffff71;
     color: rgb(0, 0, 0);
-border:  #ffffff00;
+    border: #ffffff00;
     border-radius: 50px;
     padding: 50px 10px;
     padding: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), inset 0 2px 5px rgba(0, 145, 255, 0.061);
     cursor: pointer;
     transition: background-color 0.1s ease-in-out;
 
@@ -245,6 +265,17 @@ border:  #ffffff00;
     font-size: 17px;
 }
 
+.card-title-s {
+    color: rgb(0, 0, 0);
+
+    text-shadow: rgb(255, 255, 255) 1px 0 10px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    font-size: 17px;
+}
+
 .ad-img {
     width: 320px;
     border-radius: 20px;
@@ -315,7 +346,7 @@ border:  #ffffff00;
     max-width: 150px;
     margin: 0 auto;
     transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
-
+    border: rgba(0, 145, 255, 0.061) 1px solid;
 
     &:hover {
         transform: scale(1.1);
@@ -418,10 +449,22 @@ border:  #ffffff00;
     z-index: 1000;
     backdrop-filter: blur(30px);
     border-radius: 30px;
-    background-color: rgba(255, 255, 255, 0.281);
+    background-color: rgba(255, 255, 255, 0.104);
     border: rgba(0, 145, 255, 0.061) 1px solid;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), inset 0 2px 5px rgba(0, 145, 255, 0.061);
+    animation: open2 0.5s ease-in-out;
 
+    @keyframes open2 {
+        from {
+            translate: 0px 0px;
+            opacity: 0;
+        }
+
+        to {
+            translate: 0px 10px;
+            opacity: 1;
+        }
+    }
 }
 
 .unifBtn {

@@ -40,10 +40,10 @@ let searching = () => {
         div.classList.add("searchModal");
         div.innerHTML = `<h3 class="list-title">Search Results:</h3><ul class="main-list">
             ${filtered.map(name => `
-                <li class="main-item">
+                <li class="main-item-s">
                     <a href="${progs[name]}" class="main-link">
                         <img class="img" src="images/${name.toLowerCase().replace(/\s/g, '')}.svg" alt="${name}" width="98">
-                        <h3 class="card-title">${name}</h3>
+                        <h3 class="card-title-s">${name}</h3>
                     </a>
                 </li>
             `).join("")}

@@ -114,6 +114,14 @@ ul {
     padding: 10px 10px;
 
 }
+.backdropload-s {
+    border: rgba(0, 145, 255, 0.106) 1px solid;
+    backdrop-filter: blur(30px);
+    border-radius: 30px;
+    height: auto;
+    padding: 10px 10px;
+
+}
 
 .archive-warning {
     background-color: rgba(255, 0, 0, 0.228);
