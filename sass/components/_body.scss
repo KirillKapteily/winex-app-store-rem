@@ -3,15 +3,16 @@ $light-text: black;
 $dark-text: white;
 
 body {
-   
-// background-image: url("https://kirillkapteily.github.io/winex-app-store-rem/images/back.svg");
+
+   // background-image: url("https://kirillkapteily.github.io/winex-app-store-rem/images/back.svg");
 background-image: url("https://kirillkapteily.github.io/winex-app-store-rem/images/backk.svg");
-background-size: cover;
+
+   background-size: cover;
    margin: 3px 3px;
    transition: 0.3s;
    font-family: 'Roboto', Arial, sans-serif;
 }
 
-p{
+p {
    text-shadow: white 1px 0 10px;
 }
