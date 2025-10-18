@@ -35,7 +35,7 @@ let progs = {
     Pixso: "./html/pixsodowmac.html",
     Canva: "./html/canvamac.html",
     Gimp: "./html/gimpmac.html",
-    Wine: "./html/winemac.html"
+    Wine: "./html/winemac.html",
 };
 
 let searchBar = document.querySelector(".searchBar");

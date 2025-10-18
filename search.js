@@ -78,5 +78,5 @@ let searching = () => {
         document.body.appendChild(div);
     }
 };
-const debounceSearch = _.debounce(searching, 300);
+const debounceSearch = _.debounce(searching, 200);
 searchBar.addEventListener("input", debounceSearch);
