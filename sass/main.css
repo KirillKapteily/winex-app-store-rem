@@ -272,8 +272,6 @@ p {
   display: flex;
   justify-content: center;
   border-radius: 30px;
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
   transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s, margin cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s, box-shadow cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
   background: linear-gradient(to top, rgba(207, 236, 255, 0.4156862745), rgba(255, 255, 255, 0.0196078431));
   border: rgba(0, 145, 255, 0.061) 1px solid;
@@ -350,8 +348,8 @@ p {
   padding: 20px;
   box-sizing: border-box;
   border: rgba(0, 145, 255, 0.061) 1px solid;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), inset 0 2px 5px rgba(0, 145, 255, 0.061);
   border-radius: 30px;
   display: flex;
@@ -655,6 +653,7 @@ header {
   margin-bottom: 50px;
   border-radius: 50px;
   border: rgba(0, 145, 255, 0.061) 1px solid;
+  background-color: rgb(214, 232, 243);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), inset 0 2px 5px rgba(0, 145, 255, 0.061);
 }
 
@@ -877,7 +876,7 @@ body {
 }
 
 .sidebar a:hover {
-  background-color: rgba(255, 255, 255, 0.307);
+  background-color: rgba(0, 0, 0, 0.307);
   -webkit-backdrop-filter: blur(30px);
           backdrop-filter: blur(30px);
 }
@@ -1177,11 +1176,11 @@ h3 {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  background-color: rgba(211, 47, 47, 0);
+  background-color: rgb(214, 232, 243);
 }
 
 .open-chat-btn:hover {
-  background-color: rgb(214, 232, 243);
+  background-color: rgb(213, 239, 255);
 }
 
 .go {
