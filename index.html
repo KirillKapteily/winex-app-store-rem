@@ -22,8 +22,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/@xenova/transformers"></script>
-
+<script src="transp.js" defer></script>
 
 
   <title>WinexAppStore</title>
@@ -59,9 +58,14 @@
   <main>
     <div class="container">
       <div class="center-button">
-        <button class="open-chat-btn" onclick="openChat()">AI</button>
         <input type="text" class="searchBar" placeholder="Search">
-        <!-- <button class="settings" type="button">settings</button> -->
+        <button class="settingsBtn" type="button">Settings</button>
+      </div>
+      <div class="searchModal"></div>
+      <div class="settingsModal">
+        <button class="settingsClose">&times;</button>
+        <button class="reduceTransBtn">Reduce translucency</button>
+                <button class="increTransBtn">increase translucency</button>
       </div>
       <div class="modal" id="chat-modal">
         <button class="close-btn" onclick="closeChat()">&times;</button>
@@ -75,9 +79,6 @@
               </svg></button>
           </div>
         </div>
-      </div>
-      <div class="settingsModal">
-
       </div>
       <section class="ad">
         <div class="back">
@@ -159,20 +160,20 @@
     <div class="container">
       <h3 class="list-title">browsers</h3>
       <ul class="main-list backdropload">
-        <li class="main-item"><a href="./html/firefoxdownloadpage.html" class="main-link"><img class="img"
-              src=" " alt="firefox" data-src="images/firefox.svg" width="119">
+        <li class="main-item"><a href="./html/firefoxdownloadpage.html" class="main-link"><img class="img" src=" "
+              alt="firefox" data-src="images/firefox.svg" width="119">
             <h3 class="card-title">Firefox</h3>
           </a></li>
-        <li class="main-item"><a href="./html/googlechromedownload.html" class="main-link"><img class="img"
-              src=" " alt="Google Chrome" data-src="images/googlechrome.svg" width="119">
+        <li class="main-item"><a href="./html/googlechromedownload.html" class="main-link"><img class="img" src=" "
+              alt="Google Chrome" data-src="images/googlechrome.svg" width="119">
             <h3 class="card-title">Google Chrome</h3>
           </a></li>
-        <li class="main-item"><a href="./html/supermiumdownload.html" class="main-link"><img class="img"
-              src=" " alt="Supermium" data-src="images/supermium.svg" width="119">
+        <li class="main-item"><a href="./html/supermiumdownload.html" class="main-link"><img class="img" src=" "
+              alt="Supermium" data-src="images/supermium.svg" width="119">
             <h3 class="card-title">Supermium</h3>
           </a></li>
-        <li class="main-item"><a href="./html/msedgedownload.html" class="main-link"><img class="img"
-              src=" " alt="edge" data-src="images/microsoftedge.svg" width="119">
+        <li class="main-item"><a href="./html/msedgedownload.html" class="main-link"><img class="img" src=" " alt="edge"
+              data-src="images/microsoftedge.svg" width="119">
             <h3 class="card-title">Microsoft Edge</h3>
           </a></li>
         <li class="main-item"><a href="./html/operadown.html" class="main-link"><img class="img"
@@ -271,8 +272,7 @@
       <h3 class="list-title">Programing</h3>
       <ul class="main-list backdropload">
         <li class="main-item"><a href="./html/vscodedownload.html" class="main-link"><img class="img"
-              data-src="images/visualstudiocode.svg" src=" " alt="visualstudiocode"
-              width="119">
+              data-src="images/visualstudiocode.svg" src=" " alt="visualstudiocode" width="119">
             <h3 class="card-title">VS code</h3>
           </a></li>
         <li class="main-item ani-rn"><a href="./html/githubdownload.html" class="main-link"><img class="img"
@@ -283,8 +283,8 @@
               data-src="images/gitbash.svg" alt="GitBash" width="119">
             <h3 class="card-title">GitBash</h3>
           </a></li>
-        <li class="main-item"><a href="./html/arduino.html" class="main-link"><img class="img"
-              src=" " data-src="images/arduinoide.svg" alt="Arduino" width="119">
+        <li class="main-item"><a href="./html/arduino.html" class="main-link"><img class="img" src=" "
+              data-src="images/arduinoide.svg" alt="Arduino" width="119">
             <h3 class="card-title">Arduino IDE</h3>
           </a></li>
       </ul>
@@ -310,8 +310,7 @@
             <h3 class="card-title">AnyDesk</h3>
           </a></li>
         <li class="main-item"><a href="./html/appledevi.html" class="main-link"><img class="img"
-              data-src="images/appledevices.svg" src=" " alt="Apple devices" class="radius"
-              width="119">
+              data-src="images/appledevices.svg" src=" " alt="Apple devices" class="radius" width="119">
             <h3 class="card-title">Apple devices</h3>
           </a></li>
         <li class="main-item"><a href="./html/docker.html" class="main-link"><img class="img" src=" "
@@ -319,8 +318,7 @@
             <h3 class="card-title">Docker</h3>
           </a></li>
         <li class="main-item"><a href="./html/mspcmgr.html" class="main-link"><img class="img"
-              data-src="images/microsoftpcmanager.svg" src=" " alt="pc manager"
-              class="radius" width="119">
+              data-src="images/microsoftpcmanager.svg" src=" " alt="pc manager" class="radius" width="119">
             <h3 class="card-title">MS PC Manager</h3>
           </a></li>
         <li class="main-item"><a href="./html/evernote.html" class="main-link"><img class="img"
@@ -409,7 +407,7 @@
             </ul>
           </div>
           <p>Background: Vecteezy (edited)</p>
-          <p class="version-p">Version 2.0 public beta 5</p>
+          <p class="version-p">Version 2.0</p>
           <!-- <button type="button" class="themeBlack">o</button> -->
         </div>
 
@@ -419,10 +417,11 @@
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
-<script src="ai.js"></script>
 <script src="search.js"></script>
 <script src="observer.js"></script>
-<script src="theme.js"></script>
+
+<script src="index.js"></script>
+<!-- <script src="index.js" type="module" defer></script> -->
 <script src="script.js"></script>
 
 </html>

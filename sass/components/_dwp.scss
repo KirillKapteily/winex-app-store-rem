@@ -114,20 +114,14 @@ ul {
     padding: 10px 10px;
 
 }
+
 .backdropload-s {
     border: rgba(0, 145, 255, 0.106) 1px solid;
-    backdrop-filter: blur(30px);
+    background-color: rgb(225, 243, 255);
     border-radius: 30px;
     height: auto;
     padding: 10px 10px;
 
-}
-
-.archive-warning {
-    background-color: rgba(255, 0, 0, 0.228);
-    border: rgba(255, 0, 0, 0.264) 1px solid;
-    border-radius: 30px;
-    padding: 10px 10px;
 }
 
 .download__ico {
@@ -156,11 +150,10 @@ ul {
     font-size: 15px;
     letter-spacing: 1px;
     max-width: 500px;
-    background-color: rgba(0, 145, 255, 0);
+    background-color: rgb(225, 243, 255);
     border: rgba(0, 145, 255, 0.061) 1px solid;
     border-radius: 30px;
     padding: 10px 10px;
-    backdrop-filter: blur(30px);
 }
 
 .none {
@@ -171,26 +164,11 @@ ul {
 }
 
 .product-img {
-    transition: transform 0.5s;
+ transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s, filter cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
 
     &:hover {
-        animation: rotater-img 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-
-        @keyframes rotater-img {
-            0% {
-                transform: scale(1);
-            }
-
-            50% {
-                transform: scale(1.1);
-
-            }
-
-            100% {
-                transform: scale(1);
-            }
-        }
-
+       transform: scale(1.1);
+     filter: drop-shadow(6px 6px 20px rgba(0, 0, 0, 0.466));
     }
 }
 
@@ -202,6 +180,14 @@ ul {
     flex-wrap: wrap;
     margin-top: 50px;
 
+}
+
+.img-item{
+    transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
+
+    &:hover{
+        transform: scale(1.1);
+    }
 }
 
 .download-button {
@@ -248,13 +234,13 @@ h3 {
 
         50% {
             transform: scale(1.1);
-               transform: rotate(180deg);
+            transform: rotate(180deg);
 
         }
 
         100% {
             transform: scale(1);
-   transform: rotate(0deg);
+            transform: rotate(0deg);
         }
     }
 }

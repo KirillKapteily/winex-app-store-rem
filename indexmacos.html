@@ -21,6 +21,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+    <script src="transp.js" defer></script>
   <title>Сайт</title>
 </head>
 
@@ -68,8 +69,15 @@
 
     <div class="container">
       <div class="center-button">
-        <button class="open-chat-btn" onclick="openChat()">AI</button>
+
                 <input type="text" class="searchBar" placeholder="Search">
+                 <button class="settingsBtn" type="button">Settings</button>
+                      <div class="searchModal"></div>
+      <div class="settingsModal">
+        <button class="settingsClose">X</button>
+        <button class="reduceTransBtn">Reduce translucency</button>
+                <button class="increTransBtn">increase translucency</button>
+      </div>
       </div>
 
       <div class="modal" id="chat-modal">
@@ -90,17 +98,6 @@
           <section class="ad-container">
             <div class="slider">
               <ul class="slides">
-                <li class="slide">
-                  <div>
-                    <p class="slide-sopnsored">Sponsored</p>
-                    <img src="./images/linuxappstorefromvova.webp" alt="Arrow" width="322" class="slide-img">
-                    <h2 class="slide-title">The most incredible app store for Linux!</h2>
-                    <h2 class="slide-title">Linux App Store</h2>
-                    <a href="https://developer-macos.github.io/LinuxAppStoreRem/" class="ad-buttton">Try now</a>
-                  </div>
-
-
-                </li>
                 <li class="slide">
                   <div>
                     <img src="./images/appsscreens/figma-1.jpg" alt="Arrow" width="322" class="slide-img">

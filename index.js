@@ -1,8 +1,3 @@
-let productImg = document.querySelector(".product-img");
+// let logow = document.querySelector(".logow");
 
-
-
-let moved = () => {
-    productImg.classList.add("moved");
-}
-productImg.addEventListener("click", moved);
+// logow.innerHTML = `<svg class="unifBtn"> < use href = "./images/symbol-defs-logo.svg#icon-logowinex" width = "20" height = "20" ></use ></svg > `;

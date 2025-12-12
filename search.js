@@ -1,3 +1,5 @@
+
+//search
 let progs = {
     Firefox: "./html/firefoxdownloadpage.html",
     "Google Chrome": "./html/googlechromedownload.html",
@@ -45,17 +47,21 @@ let progs = {
     clipchamp: "./html/clipclamp.html"
 };
 
+
+
 let searchBar = document.querySelector(".searchBar");
 let nameAr = document.querySelectorAll(".card-title");
 const array = Array.from(nameAr);
 const names = array.map(element => element.textContent.trim());
+
+
 
 let searching = () => {
     let text = searchBar.value.trim().toLowerCase();
     const existingModal = document.querySelector(".searchModal");
     if (existingModal) existingModal.remove();
 
-    if (text === "") return; 
+    if (text === "") return;
 
     const filtered = Object.keys(progs).filter(name =>
         name.toLowerCase().includes(text)
@@ -74,6 +80,7 @@ let searching = () => {
                 </li>
             `).join("")}
         </ul>`;
+
 
         document.body.appendChild(div);
     }

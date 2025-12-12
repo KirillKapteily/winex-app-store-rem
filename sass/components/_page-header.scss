@@ -9,12 +9,12 @@ list-style: none;
     color: black;
 font-size: 20px;
 transition: color 1s cubic-bezier(0.19, 1, 0.22, 1);
- text-shadow: white 1px 0 10px;
 
 &:hover{
   color: #53baff;
 }
 }
+
 
 header{
     display: flex;
@@ -22,7 +22,7 @@ header{
     margin-bottom: 50px;
     border-radius: 50px;
          border: rgba(0, 145, 255, 0.061) 1px solid;
-  background-color: rgb( 214, 232, 243);
+  background-color: rgb(240, 249, 255);
  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), inset 0 2px 5px rgba(0, 145, 255, 0.061);
 }
 
@@ -66,23 +66,6 @@ scale: (1.1);
     }
    }
    
-   .submenu {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    margin: 0;
-    list-style: none;
-    padding: 10px;
-    border-radius: 10px;
-    -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
-    display: none;
-   }
-
-   .submenu-link{
-    text-decoration: none;
-    color: white;
-   }
 
    .h-p{
     display: flex;

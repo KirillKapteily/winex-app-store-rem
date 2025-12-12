@@ -1,0 +1,4 @@
+@mixin glass($blur, $alpha) {
+  backdrop-filter: blur($blur);
+  background: rgba(255, 255, 255, $alpha);
+}
