@@ -26,7 +26,7 @@
     align-items: center;
     border-radius: 30px;
     transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s, margin cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s, box-shadow cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s;
-    backdrop-filter: blur(3px);
+    // backdrop-filter: blur(3px);
     background: linear-gradient(to top, #cfecff2b, #ffffff00);
     border: rgba(0, 145, 255, 0.061) 1px solid;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), inset 0 2px 5px rgba(0, 145, 255, 0.061);
@@ -125,7 +125,7 @@
     padding: 20px;
     box-sizing: border-box;
     border: rgba(0, 145, 255, 0.061) 1px solid;
-    backdrop-filter: blur(10px);
+    // backdrop-filter: blur(10px);
     //   @include glass($glass-blur-low, $glass-alpha-1);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), inset 0 2px 5px rgba(0, 145, 255, 0.061);
     border-radius: 30px;

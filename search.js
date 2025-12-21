@@ -1,4 +1,9 @@
-
+// import { reducedTransp } from "transp.js";
+//   if (reducedTransp === true) {
+//             searchModal.style.background = "white";
+//         } else {
+//                    searchModal.style.background = "#d32f2f00";
+//         }
 //search
 let progs = {
     Firefox: "./html/firefoxdownloadpage.html",
@@ -83,6 +88,8 @@ let searching = () => {
 
 
         document.body.appendChild(div);
+
+      
     }
 };
 const debounceSearch = _.debounce(searching, 200);

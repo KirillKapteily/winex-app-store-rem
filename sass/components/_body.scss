@@ -5,9 +5,10 @@ $dark-text: white;
 body {
 
    // background-image: url("https://kirillkapteily.github.io/winex-app-store-rem/images/back.svg");
-background-image: url("https://kirillkapteily.github.io/winex-app-store-rem/images/backk.svg");
-// background-image: url("../../images/backk.svg");
+// background-image: url("https://kirillkapteily.github.io/winex-app-store-rem/images/backk.svg");
+// // background-image: url("../../images/backk.svg");
 // backdrop-filter: blur(10px);
+background: linear-gradient(to top, #a4daff, #cfecff, #ffffff);
    background-size: cover;
    margin: 3px 3px;
    transition: 0.3s;
