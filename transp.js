@@ -1,4 +1,4 @@
- let reducedTransp = false;
+let reducedTransp = false;
 let reduceTransBtn = document.querySelector(".reduceTransBtn");
 let settingsModal = document.querySelector(".settingsModal");
 let settingsClose = document.querySelector(".settingsClose");
@@ -12,8 +12,8 @@ let sidebar = document.querySelector(".sidebar"); //sidebar-link
 let increaceTransp = () => {
     reducedTransp = false;
     settingsModal.style.background = "none";
-    searchModal.style.background = "none";
-     sidebar.style.background = "none";
+    increaceAllModals()
+    sidebar.style.background = "none";
     mainItem.forEach(item => item.style.background = "linear-gradient(to top, #cfecff2b, #ffffff00)");
 
 
@@ -22,14 +22,29 @@ let increaceTransp = () => {
 
 let reduceTrans = () => {
     reducedTransp = true;
+
     settingsModal.style.background = "white";
-    searchModal.style.background = "white";
     sidebar.style.background = "white";
 
-    mainItem.forEach(item => item.style.background = "linear-gradient(to top, #cfecff, rgba(255, 255, 255, 1))");
+    mainItem.forEach(item =>
+        item.style.background = "linear-gradient(to top, #cfecff, white)"
+    );
 
-    localStorage.setItem("TranspIsOn", 1)
-}
+    reduceAllModals();
+    localStorage.setItem("TranspIsOn", "1");
+};
+
+let increaceAllModals = () => {
+    document
+        .querySelectorAll(".searchModal")
+        .forEach(modal => modal.classList.remove("reduced"));
+};
+
+let reduceAllModals = () => {
+    document
+        .querySelectorAll(".searchModal")
+        .forEach(modal => modal.classList.add("reduced"));
+};
 
 function loadState() {
     let getreducedTransp = localStorage.getItem("TranspIsOn");

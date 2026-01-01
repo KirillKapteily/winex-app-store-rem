@@ -88,8 +88,6 @@ let searching = () => {
 
 
         document.body.appendChild(div);
-
-      
     }
 };
 const debounceSearch = _.debounce(searching, 200);

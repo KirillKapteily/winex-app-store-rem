@@ -252,7 +252,7 @@ button.next {
 
 .card-title-s {
     color: rgb(0, 0, 0);
-
+// filter: drop-shadow(rgb(255, 255, 255) 1px 0 10px);
     text-shadow: rgb(255, 255, 255) 1px 0 10px;
     display: flex;
     justify-content: center;
@@ -400,6 +400,32 @@ button.next {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), inset 0 2px 5px rgba(0, 145, 255, 0.061);
 }
 
+.searchModal.reduced {
+    max-width: 100%;
+    max-height: 2900px;
+    position: absolute;
+    top: 300px;
+    z-index: 1000;
+    border-radius: 30px;
+    backdrop-filter: blur(15px);
+    background-color: rgb(240, 248, 255);
+    border: rgba(0, 145, 255, 0.061) 1px solid;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), inset 0 2px 5px rgba(0, 145, 255, 0.061);
+    animation: open2 0.5s ease-in-out;
+
+    @keyframes open2 {
+        from {
+            translate: 0px 0px;
+            opacity: 0;
+        }
+
+        to {
+            translate: 0px 10px;
+            opacity: 1;
+        }
+    }
+}
+
 .searchModal {
     max-width: 100%;
     max-height: 2900px;
@@ -444,6 +470,8 @@ button.next {
     margin: 0 auto;
     background-color: #d32f2f00;
 }
+
+
 
 .settingsModal {
     display: flex;
