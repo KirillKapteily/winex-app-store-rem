@@ -49,7 +49,8 @@ let progs = {
     Pixso: "./html/pixsodow.html",
     Canva: "./html/canva.html",
     Gimp: "./html/gimp.html",
-    clipchamp: "./html/clipclamp.html"
+    clipchamp: "./html/clipclamp.html",
+    capcut: "./html/"
 };
 
 
