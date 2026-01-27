@@ -24,7 +24,7 @@ let reduceTrans = () => {
     reducedTransp = true;
 
     settingsModal.style.background = "white";
-    sidebar.style.background = "white";
+    sidebar.style.background = " rgb(138, 138, 138)";
 
     mainItem.forEach(item =>
         item.style.background = "linear-gradient(to top, #cfecff, white)"
