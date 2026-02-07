@@ -441,12 +441,10 @@ button.next {
 
     @keyframes open2 {
         from {
-            translate: 0px 0px;
             opacity: 0;
         }
 
         to {
-            translate: 0px 10px;
             opacity: 1;
         }
     }

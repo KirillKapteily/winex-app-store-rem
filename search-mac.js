@@ -57,6 +57,11 @@ let searching = () => {
     if (filtered.length > 0) {
         const div = document.createElement("div");
         div.classList.add("searchModal");
+
+        if (reducedTransp) {
+            div.classList.add("reduced");
+        }
+
         div.innerHTML = `<h3 class="list-title">Search Results:</h3><ul class="main-list">
             ${filtered.map(name => `
                 <li class="main-item-s">
@@ -72,5 +77,5 @@ let searching = () => {
     }
 };
 
-const debounceSearch = _.debounce(searching, 300);
+const debounceSearch = _.debounce(searching, 200);
 searchBar.addEventListener("input", debounceSearch);

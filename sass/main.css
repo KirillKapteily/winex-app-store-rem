@@ -625,11 +625,9 @@ button.next {
 }
 @keyframes open2 {
   from {
-    translate: 0px 0px;
     opacity: 0;
   }
   to {
-    translate: 0px 10px;
     opacity: 1;
   }
 }
@@ -955,16 +953,19 @@ footer {
 
 .footer-item {
   color: black;
+  padding-bottom: 5px;
 }
 
 .mailto {
   color: black;
   text-decoration: none;
+  font-size: 20px;
 }
 
 .footer-link {
   color: black;
   text-decoration: none;
+  font-size: 20px;
 }
 
 .footer-wrapper {
