@@ -94,7 +94,21 @@ let searching = () => {
 
 
         document.body.appendChild(div);
+    }else {
+        const div = document.createElement("div");
+        div.classList.add("searchModal");
+
+        if (reducedTransp) {
+            div.classList.add("reduced");
+        }
+
+        div.innerHTML = `
+        <h2 class="notFound">Try looking for something else</h2>
+           `;
+
+        document.body.appendChild(div);
     }
 };
+
 const debounceSearch = _.debounce(searching, 200);
 searchBar.addEventListener("input", debounceSearch);

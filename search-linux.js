@@ -29,7 +29,7 @@ let searching = () => {
     const existingModal = document.querySelector(".searchModal");
     if (existingModal) existingModal.remove();
 
-    if (text === "") return; 
+    if (text === "") return;
 
     const filtered = Object.keys(progs).filter(name =>
         name.toLowerCase().includes(text)
@@ -53,6 +53,19 @@ let searching = () => {
                 </li>
             `).join("")}
         </ul>`;
+
+        document.body.appendChild(div);
+    } else {
+        const div = document.createElement("div");
+        div.classList.add("searchModal");
+
+        if (reducedTransp) {
+            div.classList.add("reduced");
+        }
+
+        div.innerHTML = `<h3 class="list-title">Search Results:</h3>
+        <h2>Try looking for something else</h2>
+           `;
 
         document.body.appendChild(div);
     }

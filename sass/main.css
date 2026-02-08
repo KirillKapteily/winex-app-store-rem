@@ -600,11 +600,9 @@ button.next {
 }
 @keyframes open2 {
   from {
-    translate: 0px 0px;
     opacity: 0;
   }
   to {
-    translate: 0px 10px;
     opacity: 1;
   }
 }
@@ -630,6 +628,10 @@ button.next {
   to {
     opacity: 1;
   }
+}
+
+.notFound {
+  padding: 20px 20px 20px 20px;
 }
 
 .unifBtn {

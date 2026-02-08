@@ -74,7 +74,21 @@ let searching = () => {
         </ul>`;
 
         document.body.appendChild(div);
+    }else {
+        const div = document.createElement("div");
+        div.classList.add("searchModal");
+
+        if (reducedTransp) {
+            div.classList.add("reduced");
+        }
+
+        div.innerHTML = `<h3 class="list-title">Search Results:</h3>
+        <h2>Try looking for something else</h2>
+           `;
+
+        document.body.appendChild(div);
     }
+
 };
 
 const debounceSearch = _.debounce(searching, 200);
