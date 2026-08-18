@@ -1,0 +1,24 @@
+.background{
+background: #ffb0b0c6;
+  color: rgb(0, 0, 0);
+  border: solid 0.5px white;
+  border-left: white;
+  border-right: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.149),
+    inset 2px 2px 0px -2px rgba(255, 255, 255, 0.7),
+    inset 0 0 3px 1px rgba(255, 255, 255, 0.7);
+}
+
+.end__link{
+    color: #0072bd;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

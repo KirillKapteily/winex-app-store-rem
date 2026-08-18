@@ -591,8 +591,7 @@ button.next {
   top: 300px;
   z-index: 1000;
   border-radius: 30px;
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   background-color: rgb(240, 248, 255);
   border: rgba(0, 145, 255, 0.061) 1px solid;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), inset 0 2px 5px rgba(0, 145, 255, 0.061);
@@ -614,8 +613,7 @@ button.next {
   top: 300px;
   z-index: 1000;
   border-radius: 30px;
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   background-color: rgba(240, 248, 255, 0.23);
   border: rgba(0, 145, 255, 0.061) 1px solid;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), inset 0 2px 5px rgba(0, 145, 255, 0.061);
@@ -661,8 +659,7 @@ button.next {
   left: 100;
   z-index: 1000000;
   width: 200px;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border-radius: 20px;
   overflow: hidden;
   animation: open 0.5s ease-in-out;
@@ -894,8 +891,7 @@ body {
   top: 0;
   left: -250px;
   background-color: rgba(17, 17, 17, 0);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border: rgba(0, 145, 255, 0.061) 1px solid;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), inset 0 2px 5px rgba(0, 145, 255, 0.061);
   overflow-x: hidden;
@@ -919,8 +915,7 @@ body {
 
 .sidebar a:hover {
   background-color: rgba(0, 0, 0, 0.307);
-  -webkit-backdrop-filter: blur(30px);
-          backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
 }
 
 .openbtn {
@@ -998,8 +993,7 @@ ul {
   gap: 10px;
   padding-left: 0px;
   list-style: none;
-  -webkit-backdrop-filter: 10px;
-          backdrop-filter: 10px;
+  backdrop-filter: 10px;
   border-radius: 30px;
   padding: 10px 10px;
 }
@@ -1021,7 +1015,6 @@ ul {
 }
 .copyright:hover {
   animation: rotater 1s;
-  fill: rgb(0, 157, 255);
 }
 @keyframes rotater {
   0% {
@@ -1033,6 +1026,9 @@ ul {
   100% {
     transform: rotate(360deg) scale(1);
   }
+}
+.copyright:hover {
+  fill: rgb(0, 157, 255);
 }
 
 .download__safe {
@@ -1254,8 +1250,7 @@ h3 {
 
 .ai-input {
   background-color: rgba(221, 221, 221, 0);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
 
 .chat-header {
@@ -1283,8 +1278,7 @@ h3 {
 
 .message.bot {
   background-color: rgba(221, 221, 221, 0.4078431373);
-  -webkit-backdrop-filter: 30px;
-          backdrop-filter: 30px;
+  backdrop-filter: 30px;
   border-radius: 10px;
   color: #000000;
 }
@@ -1344,4 +1338,26 @@ h3 {
 
 .close-btn:hover {
   background-color: #d32f2f;
+}
+
+.background {
+  background: rgba(255, 176, 176, 0.7764705882);
+  color: rgb(0, 0, 0);
+  border: solid 0.5px white;
+  border-left: white;
+  border-right: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.149), inset 2px 2px 0px -2px rgba(255, 255, 255, 0.7), inset 0 0 3px 1px rgba(255, 255, 255, 0.7);
+}
+
+.end__link {
+  color: #0072bd;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }/*# sourceMappingURL=main.css.map */
